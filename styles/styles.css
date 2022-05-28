@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Macondo-Regular";
+    src: 
+    url("./Macondo-Regular.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Macondo-Regular";
+
+    padding-top: 75px;
+}
+
+.container {
+    width: 1520px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
