@@ -1,7 +1,17 @@
 @font-face {
-    font-family: "Macondo-Regular";
+    font-family: "Roboto-Regular";
     src: 
-    url("./Macondo-Regular.ttf");
+    url("./Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Italic" ;
+    src: url("./Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url("./Roboto-BoldItalic.ttf");
 }
 
 body {
@@ -9,13 +19,14 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-family: "Macondo-Regular";
+    font-family: "Roboto-Regular";
 
     padding-top: 75px;
 }
 
 .container {
     width: 1520px;
+    margin: 0 auto;
 }
 
 h1 {
