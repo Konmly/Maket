@@ -14,6 +14,10 @@
     src: url("./Roboto-BoldItalic.ttf");
 }
 
+body {
+    font-family: "Macondo-Regular";
+}
+
 .container {
     width: 1520px;
     margin: 0 auto;
@@ -32,4 +36,13 @@ h2 {
 h3 {
     font-size: 24px;
     font-weight: 700;
+}
+
+.button {
+    background: none;
+    border: none;
+
+    color: #FCFCFC;
+    font-weight: 400;
+    font-family: "Macondo-Regular";
 }
