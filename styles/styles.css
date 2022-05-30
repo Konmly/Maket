@@ -38,29 +38,23 @@ h3 {
     font-weight: 700;
 }
 
-
-
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+
+    padding-top: 75px;
 }
 
 .header__button {
-    background: none;
-    border: none;
-
-    color: #FCFCFC;
     font-size: 18px;
-    font-weight: 400;
-    font-family: "Macondo-Regular";
 }
 
-.button__outline {
+.header__button-outline {
     border-radius: 5px;
     border: 2px solid #FCFCFC;
 
     padding: 5px 20px;
 }
+
