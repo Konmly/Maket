@@ -38,3 +38,20 @@ h3 {
     font-weight: 400;
 }
 
+.header__button:hover {
+    color: #FFD9D9;
+}
+
+.header__button:active {
+    color: #FFFFFF;
+}
+
+.header__button-outline:hover {
+    color:#FFD9D9 ;
+}
+
+.header__button-outline:active {
+    color: #FFFFFF;
+}
+
+
