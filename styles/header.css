@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    padding-top: 75px;
+}
+
+.button {
+    background: none;
+    border: none;
+
+    color: #FCFCFC;
+    font-weight: 400;
+    font-family: "Macondo-Regular";
+}
+
+.header__button {
+    font-size: 18px;
+}
+
+.header__button-outline {
+    border-radius: 5px;
+    border: 2px solid #FCFCFC;
+
+    padding: 5px 20px;
+}
+
+.header__button:hover {
+    color: #FFD9D9;
+}
+
+.header__button:active {
+    color: #FFFFFF;
+}
+
+.header__button-outline:hover {
+    color:#FFD9D9 ;
+}
+
+.header__button-outline:active {
+    color: #FFFFFF;
+}
