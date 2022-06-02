@@ -84,3 +84,47 @@ h3 {
 }
 
 
+.octopus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
+}
+
+.octopus__title {
+    color: #FCFCFC;
+
+    margin-bottom: 30px;
+}
+
+.octopus__subtitle {
+    width: 890px;
+    height: 72px;
+
+    text-align: center;
+
+    color: #F2F2F2;
+}
+
+.octopus__button {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 42px;
+
+    padding: 20px 59px;
+    margin-bottom: 83px;
+
+    background-color: #D75C78;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.octopus__button:hover {
+    background-color: #DF4C6E;
+}
+
+.octopus__button:active {
+    background-color: #C83E5D;
+}
+
