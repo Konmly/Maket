@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: 
+    url("./Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Italic" ;
+    src: url("./Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url("./Roboto-BoldItalic.ttf");
+}
+
+body {
+    font-family: "Macondo-Regular";
+}
+
+.container {
+    width: 1520px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
