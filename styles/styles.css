@@ -37,3 +37,19 @@ h3 {
     font-size: 24px;
     font-weight: 400;
 }
+
+.button {
+    background: none;
+    border: none;
+
+    color: #FCFCFC;
+    font-weight: 400;
+    font-family: "Macondo-Regular";
+}
+
+.button-outline {
+    border-radius: 5px;
+    border: 2px solid #FCFCFC;
+
+    padding: 5px 20px;
+}

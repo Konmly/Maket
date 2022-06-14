@@ -1,44 +1,34 @@
-.header {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
 
     padding-top: 75px;
-}
 
-.button {
-    background: none;
-    border: none;
-
-    color: #FCFCFC;
-    font-weight: 400;
-    font-family: "Macondo-Regular";
+    background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
 }
 
 .header__button {
     font-size: 18px;
 }
 
-.header__button-outline {
-    border-radius: 5px;
-    border: 2px solid #FCFCFC;
-
-    padding: 5px 20px;
-}
-
 .header__button:hover {
     color: #FFD9D9;
+    transition: 0.5s;
 }
 
 .header__button:active {
     color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .header__button-outline:hover {
     color:#FFD9D9 ;
+    transition: 0.5s;
 }
 
 .header__button-outline:active {
     color: #FFFFFF;
+    transition: 0.5s;
 }
