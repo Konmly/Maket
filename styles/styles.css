@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: "Macondo-Regular";
+    font-family: "Roboto-Regular", Arial, sans-serif;
 }
 
 .container {
@@ -42,14 +42,24 @@ h3 {
     background: none;
     border: none;
 
+    cursor: pointer;
+
+    padding: 0;
+    
+    font-size: 18px;
     color: #FCFCFC;
     font-weight: 400;
-    font-family: "Macondo-Regular";
 }
 
 .button-outline {
+    font-size: 18px;
+    color: #FCFCFC;
+    font-weight: 400;
+
+    cursor: pointer;
+
     border-radius: 5px;
     border: 2px solid #FCFCFC;
 
-    padding: 5px 20px;
+    padding: 5px 30px;
 }

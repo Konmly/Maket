@@ -1,34 +1,44 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: violet;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
 
     padding-top: 75px;
+}
 
-    background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
+.header__logo {
+    width: 115px;
+    height: 114px;
 }
 
 .header__button {
-    font-size: 18px;
+    margin-right: 30px;
 }
 
-.header__button:hover {
+.button:hover {
     color: #FFD9D9;
     transition: 0.5s;
 }
 
-.header__button:active {
+.button:active {
     color: #FFFFFF;
     transition: 0.5s;
 }
 
-.header__button-outline:hover {
+.button-outline:hover {
     color:#FFD9D9 ;
     transition: 0.5s;
 }
 
-.header__button-outline:active {
+.button-outline:active {
     color: #FFFFFF;
     transition: 0.5s;
 }
