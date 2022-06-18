@@ -3,15 +3,15 @@
     top: 0;
     width: 100%;
 
-    background-color: violet;
+    padding-top: 75px;
+    
+    background-color: black;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding-top: 75px;
 }
 
 .header__logo {
@@ -21,24 +21,4 @@
 
 .header__button {
     margin-right: 30px;
-}
-
-.button:hover {
-    color: #FFD9D9;
-    transition: 0.5s;
-}
-
-.button:active {
-    color: #FFFFFF;
-    transition: 0.5s;
-}
-
-.button-outline:hover {
-    color:#FFD9D9 ;
-    transition: 0.5s;
-}
-
-.button-outline:active {
-    color: #FFFFFF;
-    transition: 0.5s;
 }
