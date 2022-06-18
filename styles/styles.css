@@ -38,10 +38,12 @@ h3 {
     font-weight: 400;
 }
 
-.button {
+button {
     background: none;
     border: none;
+}
 
+.button {
     cursor: pointer;
 
     padding: 0;
