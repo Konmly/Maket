@@ -1,19 +1,25 @@
 .octopus {
+    padding-top: 90px;
+
+    background: 
+    linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
+}
+
+.octopus__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
 }
 
-.octopus__bckgr {
-    background-image: url("../images/bubble.png");
-    background-repeat: no-repeat;
+.octopus__img {
+    width: 1310px;
+    height: 570px;
 }
+
 .octopus__title {
     color: #FCFCFC;
 
-    margin-bottom: 30px;
+    margin-bottom: 37px;
 }
 
 .octopus__subtitle {
@@ -45,4 +51,3 @@
 .octopus__button:active {
     background-color: #C83E5D;
 }
-
