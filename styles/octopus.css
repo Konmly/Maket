@@ -1,4 +1,6 @@
 .octopus {
+    height: 100vw;
+
     padding-top: 90px;
 
     background: 
@@ -12,8 +14,13 @@
 }
 
 .octopus__img {
-    width: 1310px;
-    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1280px;
+
+    margin-bottom: 14px;
 }
 
 .octopus__title {
@@ -27,8 +34,9 @@
     height: 72px;
 
     text-align: center;
-
     color: #F2F2F2;
+
+    margin-bottom: 68px;
 }
 
 .octopus__button {
@@ -37,7 +45,6 @@
     line-height: 42px;
 
     padding: 20px 59px;
-    margin-bottom: 83px;
 
     background-color: #D75C78;
     border-radius: 5px;
@@ -50,4 +57,16 @@
 
 .octopus__button:active {
     background-color: #C83E5D;
+}
+
+.octopus__bckg-group-bubls {
+    position: absolute;
+    right: 27px;
+    top: 821px;
+}
+
+.octopus__bckg-bubble {
+    position: absolute;
+    left: 128px;
+    top: 775px;
 }
