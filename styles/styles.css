@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: "Macondo-Regular";
+    font-family: "Roboto-Regular", Arial, sans-serif;
 }
 
 .container {
@@ -38,3 +38,39 @@ h3 {
     font-weight: 400;
 }
 
+button {
+    background: none;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.5s;
+
+    padding: 0;
+}
+
+.button {
+    font-size: 18px;
+    color: #FCFCFC;
+    font-weight: 400;
+}
+
+.button-outline {
+    font-size: 18px;
+    color: #FCFCFC;
+    font-weight: 400;
+
+    border-radius: 5px;
+    border: 2px solid #FCFCFC;
+
+    padding: 5px 30px;
+}
+
+.button:hover,
+.button-outline:hover {
+    color: #FFD9D9;
+}
+
+.button:active,
+.button-outline:active {
+    color: #FFFFFF;
+}
