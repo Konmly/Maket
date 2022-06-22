@@ -1,8 +1,6 @@
 .octopus {
-    height: 100vw;
-
-    padding-top: 90px;
-
+    position: relative;
+    
     background: 
     linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
 }
@@ -11,6 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 100vw;
 }
 
 .octopus__img {
@@ -20,13 +20,11 @@
 
     width: 1280px;
 
-    margin-bottom: 14px;
+    margin: auto;
 }
 
 .octopus__title {
     color: #FCFCFC;
-
-    margin-bottom: 37px;
 }
 
 .octopus__subtitle {
@@ -36,15 +34,17 @@
     text-align: center;
     color: #F2F2F2;
 
-    margin-bottom: 68px;
+    margin-top: 37px;
 }
 
-.octopus__button {
+.button-contained {
     color: #FFFFFF;
     font-size: 36px;
     line-height: 42px;
+    text-transform: uppercase;
 
     padding: 20px 59px;
+    margin-top: 68px;
 
     background-color: #D75C78;
     border-radius: 5px;
@@ -59,13 +59,13 @@
     background-color: #C83E5D;
 }
 
-.octopus__bckg-group-bubls {
+.octopus__bubls-right {
     position: absolute;
     right: 27px;
     top: 821px;
 }
 
-.octopus__bckg-bubble {
+.octopus__bubble-left {
     position: absolute;
     left: 128px;
     top: 775px;
