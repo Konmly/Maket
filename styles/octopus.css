@@ -1,6 +1,6 @@
 .octopus {
-    position: relative;
-    
+    padding-bottom: 84px;
+
     background: 
     linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
 }
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
 
-    width: 100vh;
+    height: 100vh;
 }
 
 .octopus__img {
@@ -59,14 +59,14 @@
     background-color: #C83E5D;
 }
 
-.octopus__bubls-right {
-    position: absolute;
-    right: 27px;
-    top: 821px;
-}
-
-.octopus__bubble-left {
-    position: absolute;
-    left: 128px;
-    top: 775px;
+.octopus__bckg {
+    background-image:
+    url("../images/bubble.png"),
+    url("../images/Group_bubls.png");
+    background-repeat: 
+    no-repeat,
+    no-repeat;
+    background-position: 
+    left 128px bottom 109px,
+    right 27px bottom 31px;
 }
