@@ -1,8 +1,18 @@
 .octopus {
     padding-bottom: 84px;
 
-    background: 
+    background-image:
+    url("../images/bubble.png"),
+    url("../images/Group_bubls.png"),
     linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
+    background-repeat: 
+    no-repeat,
+    no-repeat,
+    no-repeat;
+    background-position: 
+    left 128px bottom 109px,
+    right 27px bottom 31px,
+    top 0 left 0;
 }
 
 .octopus__container {
@@ -10,7 +20,7 @@
     flex-direction: column;
     align-items: center;
 
-    height: 100vh;
+    height: calc(100vh -84px);
 }
 
 .octopus__img {
@@ -20,7 +30,7 @@
 
     width: 1280px;
 
-    margin: auto;
+    margin-top: auto;
 }
 
 .octopus__title {
@@ -37,20 +47,6 @@
     margin-top: 37px;
 }
 
-.button-contained {
-    color: #FFFFFF;
-    font-size: 36px;
-    line-height: 42px;
-    text-transform: uppercase;
-
-    padding: 20px 59px;
-    margin-top: 68px;
-
-    background-color: #D75C78;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
 .octopus__button:hover {
     background-color: #DF4C6E;
 }
@@ -59,14 +55,3 @@
     background-color: #C83E5D;
 }
 
-.octopus__bckg {
-    background-image:
-    url("../images/bubble.png"),
-    url("../images/Group_bubls.png");
-    background-repeat: 
-    no-repeat,
-    no-repeat;
-    background-position: 
-    left 128px bottom 109px,
-    right 27px bottom 31px;
-}
