@@ -1,0 +1,115 @@
+.diver {
+    background: 
+    url("../images/diver_bubble.png") 100% no-repeat,
+    url("../images/diver.png") 100% no-repeat,
+    url("../images/scuba.png") 100% no-repeat,
+    url("../images/diver_bubls.png") 100% no-repeat,
+    url("../images/diver_bubl.png") 100% no-repeat,
+    linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+    background-position: 
+    top 354px left 100px,
+    top 111px right 106px,
+    top 1326px left 94px,
+    top 1495px right 90px,
+    top 1065px right 779px,
+    top 0 left 0;
+
+    padding-bottom: 70px;
+}
+
+.diver__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.diver__cards1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 160px;
+
+    margin-top: 260px;
+}
+
+.diver__cards2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 160px;
+
+    margin-top: 692px;
+    margin-left: 44px;
+}
+
+.diver__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 738px;
+    height: 308px;
+
+    box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.diver__card-title {
+    width: 520px;
+
+    font-size: 24px;
+    line-height: 28px;
+    color: #F2F2F2;
+    font-weight: 700;
+
+    margin: 87px 0px 25px 125px;
+}
+
+.diver__card-subtitle {
+    width: 551px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #F2F2F2;
+
+    margin-left: 125px;
+}
+
+.diver__card1-bkgr {
+    background-color: #523A64;
+    background-image: url("../images/01.png");
+    background-repeat: no-repeat;
+    background-position: top 43px left 0;
+}
+
+.diver__card2-bkgr {
+    background-color: #523A64;
+    background-image: url("../images/02.png");
+    background-repeat: no-repeat;
+    background-position: top 46px left 0;
+}
+
+.diver__card3-bkgr {
+    background-color: #523A64;
+    background-image: url("../images/03.png");
+    background-repeat: no-repeat;
+    background-position: top 37px left 0;
+}
+
+.diver__card4-bkgr {
+    background-color: #523A64;
+    background-image: url("../images/04.png");
+    background-repeat: no-repeat;
+    background-position: top 43px left 0;
+}
+
+.diver__text {
+    width: 652px;
+    height: 192px;
+
+    color: #F6F6F6;
+    font-size: 64px;
+    line-height: 150%;
+
+    margin-top: 336px;
+    margin-left: 202px;
+}
