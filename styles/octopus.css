@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
 
-    height: calc(100vh - 84px);
+    height: calc(100vh - 84px); /* 84px is padding-bottom of .octopus*/
 }
 
 .octopus__img {
@@ -35,6 +35,8 @@
 
 .octopus__title {
     color: #FCFCFC;
+
+    margin-top: 14px;
 }
 
 .octopus__subtitle {
