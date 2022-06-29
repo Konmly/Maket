@@ -98,6 +98,15 @@ button {
     color: #FFFFFF;
 }
 
+.button-contained:hover {
+    background-color: #DF4C6E;
+}
+
+.button-contained:active {
+    background-color: #C83E5D;
+}
+
 img {
     width: 100%;
 }
+
