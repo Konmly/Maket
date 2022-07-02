@@ -21,24 +21,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.diver__cards1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    row-gap: 160px;
-
-    margin-top: 260px;
-}
-
-.diver__cards2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    row-gap: 160px;
-
-    margin-top: 692px;
-    margin-left: 44px;
+    flex-wrap: wrap;
+    column-gap: 44px;
 }
 
 .diver__card {
@@ -74,7 +58,23 @@
     margin-left: 125px;
 }
 
-.diver__card1-bkgr {
+.diver__card-one {
+    margin-top: 320px;
+}
+
+.diver__card-two {
+    margin-top: 692px;
+}
+
+.diver__card-three {
+    margin-top: -270px;
+}
+
+.diver__card-four {
+    margin-top: 160px;
+}
+
+.diver__cardone-bkgr {
     background-color: #523A64;
     background-image: url("../images/01.png");
     background-repeat: no-repeat;
