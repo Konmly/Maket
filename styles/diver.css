@@ -19,7 +19,6 @@
 
 .diver__cards {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     column-gap: 44px;
     row-gap: 160px;
@@ -28,13 +27,16 @@
 .diver__card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
 
     width: 738px;
     height: 308px;
 
     box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    background-color: #523A64;
 }
 
 .diver__card-title {
@@ -59,37 +61,79 @@
 }
 
 .diver__card:nth-child(1) {
-    background-color: #523A64;
-    background-image: url("../images/01.png");
-    background-repeat: no-repeat;
-    background-position: top 43px left 0;
-
     margin-top: 460px;
 }
 
 .diver__card:nth-child(2) {
-    background-color: #523A64;
-    background-image: url("../images/02.png");
-    background-repeat: no-repeat;
-    background-position: top 46px left 0;
-
     margin-top: 692px;
 }
 
 .diver__card:nth-child(3) {
-    background-color: #523A64;
-    background-image: url("../images/03.png");
-    background-repeat: no-repeat;
-    background-position: top 37px left 0;
-
     margin-top: -210px;
 }
 
-.diver__card:nth-child(4) {
-    background-color: #523A64;
-    background-image: url("../images/04.png");
-    background-repeat: no-repeat;
-    background-position: top 43px left 0;
+.diver__card-before-one::before {
+    content: "01";
+    position: absolute;
+
+    left: -18px;
+    top: 43px;
+
+    width: 121px;
+    height: 90px;
+
+    color: #944B6E;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 112px;
+}
+
+.diver__card-before-two::before {
+    content: "02";
+    position: absolute;
+
+    left: -18px;
+    top: 43px;
+
+    width: 121px;
+    height: 90px;
+
+    color: #944B6E;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 112px;
+}
+
+.diver__card-before-three::before {
+    content: "03";
+    position: absolute;
+
+    left: -18px;
+    top: 43px;
+
+    width: 121px;
+    height: 90px;
+
+    color: #944B6E;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 112px;
+}
+
+.diver__card-before-four::before {
+    content: "04";
+    position: absolute;
+
+    left: -18px;
+    top: 43px;
+
+    width: 121px;
+    height: 90px;
+
+    color: #944B6E;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 112px;
 }
 
 .diver__text {
