@@ -72,58 +72,8 @@
     margin-top: -210px;
 }
 
-.diver__card-before-one::before {
-    content: "01";
+.diver__card-numbers {
     position: absolute;
-
-    left: -18px;
-    top: 43px;
-
-    width: 121px;
-    height: 90px;
-
-    color: #944B6E;
-    font-size: 96px;
-    font-weight: 900;
-    line-height: 112px;
-}
-
-.diver__card-before-two::before {
-    content: "02";
-    position: absolute;
-
-    left: -18px;
-    top: 43px;
-
-    width: 121px;
-    height: 90px;
-
-    color: #944B6E;
-    font-size: 96px;
-    font-weight: 900;
-    line-height: 112px;
-}
-
-.diver__card-before-three::before {
-    content: "03";
-    position: absolute;
-
-    left: -18px;
-    top: 43px;
-
-    width: 121px;
-    height: 90px;
-
-    color: #944B6E;
-    font-size: 96px;
-    font-weight: 900;
-    line-height: 112px;
-}
-
-.diver__card-before-four::before {
-    content: "04";
-    position: absolute;
-
     left: -18px;
     top: 43px;
 
