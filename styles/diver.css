@@ -14,6 +14,7 @@
     top 1065px right 779px,
     top 0 left 0;
 
+    padding-top: 460px;
     padding-bottom: 70px;
 }
 
@@ -21,7 +22,6 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 44px;
-    row-gap: 160px;
 }
 
 .diver__card {
@@ -30,46 +30,44 @@
     flex-wrap: wrap;
     overflow: hidden;
     position: relative;
+    flex-basis: calc(50% - 22px);
 
-    width: 738px;
     height: 308px;
 
-    box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
+    box-shadow:
+    linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
     border-radius: 5px;
     background-color: #523A64;
 }
 
-.diver__card-title {
-    width: 520px;
-
+.diver__card-terminology {
     font-size: 24px;
     line-height: 28px;
     color: #F2F2F2;
     font-weight: 700;
 
-    margin: 87px 0px 25px 125px;
+    padding: 87px 80px 25px 125px;
 }
 
-.diver__card-subtitle {
-    width: 551px;
-
+.diver__card-description {
     font-size: 18px;
     font-weight: 400;
     color: #F2F2F2;
 
-    margin-left: 125px;
-}
-
-.diver__card:nth-child(1) {
-    margin-top: 460px;
+    padding-left: 125px;
+    padding-right: 80px;
 }
 
 .diver__card:nth-child(2) {
-    margin-top: 692px;
+    margin-top: 232px;
 }
 
-.diver__card:nth-child(3) {
-    margin-top: -210px;
+.diver__card:nth-child(even) {
+    margin-bottom: 160px;
+}
+
+.diver__card:nth-child(2n+3) {
+    margin-top: -75px;
 }
 
 .diver__card-numbers {
