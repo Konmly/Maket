@@ -34,13 +34,12 @@
 
     height: 308px;
 
-    box-shadow:
-    linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+    box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     background-color: #523A64;
 }
 
-.diver__card-terminology {
+.diver__card-termin {
     font-size: 24px;
     line-height: 28px;
     color: #F2F2F2;
@@ -62,12 +61,12 @@
     margin-top: 232px;
 }
 
-.diver__card:nth-child(even) {
-    margin-bottom: 160px;
+.diver__card:nth-child(2n+4) {
+    margin-top: 160px;
 }
 
 .diver__card:nth-child(2n+3) {
-    margin-top: -75px;
+    margin-top: -76px;
 }
 
 .diver__card-number {
