@@ -15,7 +15,6 @@
     top 0 left 0;
 
     padding-top: 460px;
-    padding-bottom: 70px;
 }
 
 .diver__cards {
@@ -84,13 +83,17 @@
 }
 
 .diver__text {
-    width: 652px;
-    height: 192px;
-
     color: #F6F6F6;
     font-size: 64px;
     line-height: 96px;
 
-    margin-top: 336px;
     margin-left: 202px;
+}
+
+.diver__text-margin {
+    margin-top: 336px;
+}
+
+.diver__video {
+    margin-top: 70px;
 }
