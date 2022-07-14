@@ -95,5 +95,9 @@
 }
 
 .diver__video {
-    margin-top: 70px;
+    padding-top: 70px;
+}
+
+.diver__text-wrapping {
+    display: block;
 }
