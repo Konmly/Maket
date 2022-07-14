@@ -83,19 +83,16 @@
 }
 
 .diver__text {
+    display: flex;
+    flex-direction: column;
+
     color: #F6F6F6;
     font-size: 64px;
     line-height: 96px;
+
+    margin-bottom: 100px;
 }
 
-.diver__text-margin {
-    margin-top: 336px;
-}
-
-.diver__video {
-    padding-top: 70px;
-}
-
-.diver__text-transfer {
-    display: block;
+.video__container {
+    padding-top: 336px;
 }

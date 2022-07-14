@@ -1,16 +1,16 @@
 .footer {
-    position: relative;
-
     padding-top: 330px;
-    padding-bottom: 486px;
+    padding-bottom: 538px;
 
     background:
     url("../images/submarine.png") 100% no-repeat,
     url("../images/fish.png") 100% no-repeat,
+    url("../images/footer_bckg.png") 100% no-repeat,
     linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
     background-position:
     top 0 right 0,
     bottom 409px left 0,
+    bottom 0 left 0,
     top 0 left 0;
 }
 
@@ -24,7 +24,6 @@
 .footer__tariff {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 
     width: 500px;
 
@@ -37,7 +36,7 @@
 .footer__tariff-left {
     height: 562px;
     
-    padding: 50px 65px 65px 45px;
+    padding: 50px 65px 45px 65px;
 
     background-image: url("../images/background1.png");
 }
@@ -51,12 +50,11 @@
 }
 
 .footer__short-title {
+    display: flex;
+    flex-direction: column;
+
     line-height: 72px;
     color: #FFFFFF;
-}
-
-.footer__short-transfer {
-    display: block;
 }
 
 .footer__text {
@@ -78,10 +76,7 @@
     border-radius: 5px;
 
     margin-top: 100px;
+    padding: 17px 50px 16px 50px;
 }
 
-.footer__img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
