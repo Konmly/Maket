@@ -1,0 +1,87 @@
+.footer {
+    position: relative;
+
+    padding-top: 330px;
+    padding-bottom: 486px;
+
+    background:
+    url("../images/submarine.png") 100% no-repeat,
+    url("../images/fish.png") 100% no-repeat,
+    linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+    background-position:
+    top 0 right 0,
+    bottom 409px left 0,
+    top 0 left 0;
+}
+
+.footer__tariffs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 260px;
+}
+
+.footer__tariff {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 500px;
+
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
+}
+
+.footer__tariff-left {
+    height: 562px;
+    
+    padding: 50px 65px 65px 45px;
+
+    background-image: url("../images/background1.png");
+}
+
+.footer__tariff-right {
+    height: 653px;
+
+    padding: 50px 55px 100px 55px;
+    
+    background-image: url("../images/background2.png");
+}
+
+.footer__short-title {
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.footer__short-transfer {
+    display: block;
+}
+
+.footer__text {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    color: #F2F2F2;
+
+    margin-top: 40px;
+}
+
+.footer__button {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+
+    border: 5px solid #FFFFFF;
+    border-radius: 5px;
+
+    margin-top: 100px;
+}
+
+.footer__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

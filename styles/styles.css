@@ -110,14 +110,10 @@ img {
     width: 100%;
 }
 
-dl {
+dl,dd,dt {
     margin: 0;
 }
 
-dd {
-    margin: 0;
-}
-
-dt {
+article {
     margin: 0;
 }
