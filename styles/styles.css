@@ -78,7 +78,7 @@ button {
     padding: 5px 30px;
 }
 
-.button__outline-md {
+.button__outlined-md {
     font-size: 36px;
     line-height: 42px;
 }
@@ -119,6 +119,6 @@ img {
     width: 100%;
 }
 
-dl,dd,dt,p,article {
+dl, dd, dt, p, article {
     margin: 0;
 }
