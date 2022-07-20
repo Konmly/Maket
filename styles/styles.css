@@ -78,6 +78,11 @@ button {
     padding: 5px 30px;
 }
 
+.button__outlined-md {
+    font-size: 36px;
+    line-height: 42px;
+}
+
 .button-contained {
     color: #FFFFFF;
     font-size: 36px;
@@ -114,14 +119,6 @@ img {
     width: 100%;
 }
 
-dl {
-    margin: 0;
-}
-
-dd {
-    margin: 0;
-}
-
-dt {
+dl, dd, dt, p, article {
     margin: 0;
 }

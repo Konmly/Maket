@@ -89,6 +89,10 @@
     font-size: 64px;
     line-height: 96px;
 
+    margin-bottom: 100px;
+}
+
+.video__container {
     margin-bottom: 70px;
 }
 
