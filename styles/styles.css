@@ -14,6 +14,10 @@
     src: url("./Roboto-BoldItalic.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto-Regular", Arial, sans-serif;
 }
@@ -108,4 +112,16 @@ button {
 
 img {
     width: 100%;
+}
+
+dl {
+    margin: 0;
+}
+
+dd {
+    margin: 0;
+}
+
+dt {
+    margin: 0;
 }
