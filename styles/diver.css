@@ -36,6 +36,8 @@
     box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     background-color: #523A64;
+
+    padding: 87px 60px 0px 125px;
 }
 
 .diver__card-termin {
@@ -43,8 +45,6 @@
     line-height: 28px;
     color: #F2F2F2;
     font-weight: 700;
-
-    padding: 87px 80px 25px 125px;
 }
 
 .diver__card-description {
@@ -52,8 +52,7 @@
     font-weight: 400;
     color: #F2F2F2;
 
-    padding-left: 125px;
-    padding-right: 80px;
+    margin-top: 25px;
 }
 
 .diver__card:nth-child(2) {
@@ -82,7 +81,7 @@
     line-height: 112px;
 }
 
-.diver__text {
+.video__text {
     display: flex;
     flex-direction: column;
 
@@ -94,5 +93,9 @@
 }
 
 .video__container {
+    margin-bottom: 70px;
+}
+
+.diver__video {
     padding-top: 336px;
 }
