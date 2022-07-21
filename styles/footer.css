@@ -1,72 +1,49 @@
 .footer {
-    padding-top: 330px;
-    padding-bottom: 538px;
-
-    background:
-    url("../images/submarine.png") 100% no-repeat,
-    url("../images/fish.png") 100% no-repeat,
-    url("../images/footer_bckg.png") 100% no-repeat,
-    linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
-    background-position:
-    top 0 right 0,
-    bottom 409px left 0,
-    bottom 0 left 0,
-    top 0 left 0;
+  padding-top: 330px;
+  padding-bottom: 538px;
+  background: url("../images/submarine.png") 100% no-repeat, url("../images/fish.png") 100% no-repeat, url("../images/footer_bckg.png") 100% no-repeat, linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+  background-position: top 0 right 0, bottom 409px left 0, bottom 0 left 0, top 0 left 0;
 }
-
 .footer__tariffs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 260px;
+       column-gap: 260px;
 }
-
 .footer__tariff {
-    display: flex;
-    flex-direction: column;
-
-    width: 500px;
-
-    background-size: 180%;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-size: 180%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
 }
-
 .footer__tariff_left {
-    padding: 50px 65px 45px;
-
-    background-image: url("../images/background1.png");
+  padding: 50px 65px 45px;
+  background-image: url("../images/background1.png");
 }
-
 .footer__tariff_right {
-    padding: 50px 55px 100px;
-    
-    background-image: url("../images/background2.png");
+  padding: 50px 55px 100px;
+  background-image: url("../images/background2.png");
 }
-
 .footer__short-title {
-    display: flex;
-    flex-direction: column;
-
-    line-height: 72px;
-    color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  line-height: 72px;
+  color: #FFFFFF;
 }
-
 .footer__text {
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 500;
-    color: #F2F2F2;
-
-    margin-top: 40px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #F2F2F2;
+  margin-top: 40px;
 }
-
 .footer__button {
-    color: #FFFFFF;
-
-    border: 5px solid #FFFFFF;
-
-    margin-top: 100px;
-    padding: 12px 45px 11px 45px;
-}
+  color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  margin-top: 100px;
+  padding: 12px 45px 11px 45px;
+}/*# sourceMappingURL=footer.css.map */
