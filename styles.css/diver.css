@@ -1,0 +1,71 @@
+.diver {
+  background: url("../images/diver_bubble.png") 100% no-repeat, url("../images/diver.png") 100% no-repeat, url("../images/scuba.png") 100% no-repeat, url("../images/diver_bubls.png") 100% no-repeat, url("../images/diver_bubl.png") 100% no-repeat, linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+  background-position: top 354px left 100px, top 111px right 106px, top 1326px left 94px, top 1495px right 90px, top 1065px right 779px, top 0 left 0;
+  padding-top: 460px;
+}
+.diver__cards {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 44px;
+       column-gap: 44px;
+}
+.diver__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  flex-basis: calc(50% - 22px);
+  height: 308px;
+  box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #523A64;
+  padding: 87px 60px 0px 125px;
+}
+.diver__card-termin {
+  font-size: 24px;
+  line-height: 28px;
+  color: #F2F2F2;
+  font-weight: 700;
+}
+.diver__card-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #F2F2F2;
+  margin-top: 25px;
+}
+.diver__card:nth-child(2) {
+  margin-top: 232px;
+}
+.diver__card:nth-child(2n+4) {
+  margin-top: 160px;
+}
+.diver__card:nth-child(2n+3) {
+  margin-top: -76px;
+}
+.diver__card-number {
+  position: absolute;
+  left: -18px;
+  top: 43px;
+  width: 121px;
+  height: 90px;
+  color: #944B6E;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 112px;
+}
+.diver__video {
+  padding-top: 336px;
+}
+
+.video__container {
+  margin-bottom: 70px;
+}
+.video__text {
+  display: flex;
+  flex-direction: column;
+  color: #F6F6F6;
+  font-size: 64px;
+  line-height: 96px;
+  margin-bottom: 100px;
+}/*# sourceMappingURL=diver.css.map */
