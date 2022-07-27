@@ -37,6 +37,18 @@
         background-color: #523A64;
 
         padding: 87px 60px 0px 125px;
+
+        &:nth-child(2) {
+            margin-top: 232px;
+        }
+    
+        &:nth-child(2n+4) {
+            margin-top: 160px;
+        }
+    
+        &:nth-child(2n+3) {
+            margin-top: -76px;
+        }
     }
 
     &__card-termin {
@@ -52,18 +64,6 @@
         color: #F2F2F2;
 
         margin-top: 25px;
-    }
-
-    &__card:nth-child(2) {
-        margin-top: 232px;
-    }
-
-    &__card:nth-child(2n+4) {
-        margin-top: 160px;
-    }
-
-    &__card:nth-child(2n+3) {
-        margin-top: -76px;
     }
 
     &__card-number {

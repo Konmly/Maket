@@ -30,18 +30,18 @@
         background-repeat: no-repeat;
         background-position: center;
         filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
-    }
 
-    &__tariff_left {
-        padding: 50px 65px 45px;
-
-        background-image: url("../images/background1.png");
-    }
-
-    &__tariff_right {
-        padding: 50px 55px 100px;
+        &_left {
+            padding: 50px 65px 45px;
     
-        background-image: url("../images/background2.png");
+            background-image: url("../images/background1.png");
+        }
+    
+        &_right {
+            padding: 50px 55px 100px;
+        
+            background-image: url("../images/background2.png");
+        }
     }
 
     &__short-title {
