@@ -1,0 +1,95 @@
+.diver {
+  background: url('../images/diver_bubble.png') 100% no-repeat,
+    url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+    url('../images/diver_bubls.png') 100% no-repeat, url('../images/diver_bubl.png') 100% no-repeat,
+    linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+  background-position: top 354px left 100px, top 111px right 106px, top 1326px left 94px,
+    top 1495px right 90px, top 1065px right 779px, top 0 left 0;
+
+  padding-top: 460px;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 44px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    flex-basis: calc(50% - 22px);
+
+    height: 308px;
+
+    box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: #523a64;
+
+    padding: 87px 60px 0px 125px;
+
+    &:nth-child(2) {
+      margin-top: 232px;
+    }
+
+    &:nth-child(2n + 4) {
+      margin-top: 160px;
+    }
+
+    &:nth-child(2n + 3) {
+      margin-top: -76px;
+    }
+  }
+
+  &__card-termin {
+    font-size: 24px;
+    line-height: 28px;
+    color: #f2f2f2;
+    font-weight: 700;
+  }
+
+  &__card-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #f2f2f2;
+
+    margin-top: 25px;
+  }
+
+  &__card-number {
+    position: absolute;
+    left: -18px;
+    top: 43px;
+
+    width: 121px;
+    height: 90px;
+
+    color: #944b6e;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 112px;
+  }
+
+  &__video {
+    padding-top: 336px;
+  }
+}
+
+.video {
+  &__container {
+    margin-bottom: 70px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+
+    color: #f6f6f6;
+    font-size: 64px;
+    line-height: 96px;
+
+    margin-bottom: 100px;
+  }
+}

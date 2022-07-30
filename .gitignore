@@ -1,0 +1,6 @@
+.next/
+.github/
+.idea/
+.vscode/
+node_modules/
+public/
