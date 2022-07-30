@@ -1,0 +1,44 @@
+.octopus {
+  min-height: 1080px;
+  padding-bottom: 84px;
+
+  background-image: url('../images/bubble.png'), url('../images/Group_bubls.png'),
+    linear-gradient(252.43deg, #d45b78 0.01%, #4b3862 101.01%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 128px bottom 109px, right 27px bottom 31px, top 0 left 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* 84px is padding-bottom of .octopus*/
+    height: calc(100vh - 84px);
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1280px;
+
+    margin-top: auto;
+  }
+
+  &__title {
+    color: #fcfcfc;
+
+    margin-top: 14px;
+  }
+
+  &__subtitle {
+    width: 890px;
+    height: 72px;
+
+    text-align: center;
+    color: #f2f2f2;
+
+    margin-top: 37px;
+  }
+}
