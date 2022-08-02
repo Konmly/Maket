@@ -11,7 +11,7 @@ sass.compiler = require('node-sass');
 
 gulp.task('sass', () => {
   return gulp
-    .src('./src/scss/**/*.scss')
+    .src('./src/scss/main.scss')
     .pipe(sass())
     .pipe(
       autoprefixer(['last 15 version', '> 1%', 'ie 8', 'ie 7'], {

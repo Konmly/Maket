@@ -8,18 +8,14 @@
   background-position: left 128px bottom 109px, right 27px bottom 31px, top 0 left 0;
 
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(center, center, column);
 
     /* 84px is padding-bottom of .octopus*/
     height: calc(100vh - 84px);
   }
 
   &__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
 
     width: 1280px;
 
@@ -27,7 +23,7 @@
   }
 
   &__title {
-    color: #fcfcfc;
+    color: $color__gray-99;
 
     margin-top: 14px;
   }
@@ -37,7 +33,7 @@
     height: 72px;
 
     text-align: center;
-    color: #f2f2f2;
+    color: $color__gray-95;
 
     margin-top: 37px;
   }

@@ -8,15 +8,12 @@
   background-position: top 0 right 0, bottom 409px left 0, bottom 0 left 0, top 0 left 0;
 
   &__tariffs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     column-gap: 260px;
   }
 
   &__tariff {
-    display: flex;
-    flex-direction: column;
+    @include flex(center, center, column);
 
     width: 500px;
 
@@ -39,26 +36,23 @@
   }
 
   &__short-title {
-    display: flex;
-    flex-direction: column;
-
     line-height: 72px;
-    color: #ffffff;
+    color: $color__white;
   }
 
   &__text {
     font-size: 24px;
     line-height: 36px;
     font-weight: 500;
-    color: #f2f2f2;
+    color: $color__gray-95;
 
     margin-top: 40px;
   }
 
   &__button {
-    color: #ffffff;
+    color: $color__white;
 
-    border: 5px solid #ffffff;
+    border: 5px solid $color__white;
 
     margin-top: 100px;
     padding: 12px 45px 11px 45px;
