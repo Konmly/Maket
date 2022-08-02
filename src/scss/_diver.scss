@@ -9,15 +9,12 @@
   padding-top: 460px;
 
   &__cards {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex($wrap: wrap);
     column-gap: 44px;
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flex($direction: column, $wrap: wrap);
     overflow: hidden;
     position: relative;
     flex-basis: calc(50% - 22px);
@@ -26,7 +23,7 @@
 
     box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    background-color: #523a64;
+    background-color: $color__violet;
 
     padding: 87px 60px 0px 125px;
 
@@ -46,14 +43,14 @@
   &__card-termin {
     font-size: 24px;
     line-height: 28px;
-    color: #f2f2f2;
+    color: $color__gray-95;
     font-weight: 700;
   }
 
   &__card-description {
     font-size: 18px;
     font-weight: 400;
-    color: #f2f2f2;
+    color: $color__gray-95;
 
     margin-top: 25px;
   }
@@ -66,7 +63,7 @@
     width: 121px;
     height: 90px;
 
-    color: #944b6e;
+    color: $color__pearly-purple;
     font-size: 96px;
     font-weight: 900;
     line-height: 112px;
@@ -83,10 +80,9 @@
   }
 
   &__text {
-    display: flex;
-    flex-direction: column;
+    @include flex($direction: column);
 
-    color: #f6f6f6;
+    color: $color__white-smoke;
     font-size: 64px;
     line-height: 96px;
 

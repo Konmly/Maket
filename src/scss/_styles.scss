@@ -27,25 +27,25 @@ body {
 }
 
 h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 75px;
+  font-size: $font__size-64;
+  font-weight: $font__weight-700;
+  line-height: $line__height-75;
 
   margin: 0;
 }
 
 h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 64px;
+  font-size: $font__size-48;
+  font-weight: $font__weight-700;
+  line-height: $line__height-64;
 
   margin: 0;
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
+  font-size: $font__size-24;
+  font-weight: $font__weight-400;
+  line-height: $line__height-36;
 
   margin: 0;
 }
@@ -61,57 +61,60 @@ button {
 }
 
 .button {
-  font-size: 18px;
-  color: #fcfcfc;
-  font-weight: 400;
+  @extend %button;
+  font-size: $font__size-18;
+  color: $color__gray-99;
+  font-weight: $font__weight-400;
+
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
 }
 
 .button-outline {
-  font-size: 18px;
-  color: #fcfcfc;
-  font-weight: 400;
+  @extend %button;
 
   border-radius: 5px;
   border: 2px solid #fcfcfc;
 
   padding: 5px 30px;
+
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
 }
 
 .button__outlined-md {
-  font-size: 36px;
-  line-height: 42px;
+  @extend %button__outlined-md;
 }
 
 .button-contained {
-  color: #ffffff;
-  font-size: 36px;
-  line-height: 42px;
+  color: $color__white;
+  @extend %button__outlined-md;
   text-transform: uppercase;
 
   padding: 20px 59px;
   margin-top: 68px;
 
-  background-color: #d75c78;
+  background-color: $color__japonica;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
 
-.button:hover,
-.button-outline:hover {
-  color: #ffd9d9;
-}
+  &:hover {
+    background-color: $color__mandy;
+  }
 
-.button:active,
-.button-outline:active {
-  color: #ffffff;
-}
-
-.button-contained:hover {
-  background-color: #df4c6e;
-}
-
-.button-contained:active {
-  background-color: #c83e5d;
+  &:active {
+    background-color: $color__maroon;
+  }
 }
 
 img {

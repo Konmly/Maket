@@ -9,9 +9,7 @@
   padding-top: 75px;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(space-between, center);
   }
 
   &__logo {
