@@ -13,7 +13,7 @@
   }
 
   &__tariff {
-    @include flex(center, center, column);
+    @include flex($direction: column);
 
     width: 500px;
 
@@ -36,6 +36,7 @@
   }
 
   &__short-title {
+    @include flex($direction: column);
     line-height: 72px;
     color: $color__white;
   }

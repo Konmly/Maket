@@ -8,14 +8,14 @@
   background-position: left 128px bottom 109px, right 27px bottom 31px, top 0 left 0;
 
   &__container {
-    @include flex(center, center, column);
+    @include flex($align: center, $direction: column);
 
     /* 84px is padding-bottom of .octopus*/
     height: calc(100vh - 84px);
   }
 
   &__img {
-    @include flex(center, center);
+    @include flex($justify: center, $align: center);
 
     width: 1280px;
 
