@@ -90,6 +90,14 @@ button {
   &:active {
     color: $color__white;
   }
+
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
 }
 
 .button__outlined-md {
