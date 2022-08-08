@@ -60,21 +60,41 @@ button {
   padding: 0;
 }
 
-.button {
+%button {
   font-size: 18px;
-  color: #fcfcfc;
+  color: $color__gray-99;
   font-weight: 400;
 }
 
-.button-outline {
+.button {
   font-size: 18px;
-  color: #fcfcfc;
+  color: $color__gray-99;
   font-weight: 400;
+
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
+}
+
+.button-outline {
+  @extend %button;
 
   border-radius: 5px;
   border: 2px solid #fcfcfc;
 
   padding: 5px 30px;
+
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
 }
 
 .button__outlined-md {
@@ -83,7 +103,7 @@ button {
 }
 
 .button-contained {
-  color: #ffffff;
+  color: $color__white;
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
@@ -91,27 +111,17 @@ button {
   padding: 20px 59px;
   margin-top: 68px;
 
-  background-color: #d75c78;
+  background-color: $color__japonica;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
 
-.button:hover,
-.button-outline:hover {
-  color: #ffd9d9;
-}
+  &:hover {
+    background-color: $color__mandy;
+  }
 
-.button:active,
-.button-outline:active {
-  color: #ffffff;
-}
-
-.button-contained:hover {
-  background-color: #df4c6e;
-}
-
-.button-contained:active {
-  background-color: #c83e5d;
+  &:active {
+    background-color: $color__maroon;
+  }
 }
 
 img {
