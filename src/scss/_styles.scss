@@ -27,25 +27,25 @@ body {
 }
 
 h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 75px;
+  font-size: $font__size-64;
+  font-weight: $font__weight-700;
+  line-height: $line__height-75;
 
   margin: 0;
 }
 
 h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 64px;
+  font-size: $font__size-48;
+  font-weight: $font__weight-700;
+  line-height: $line__height-64;
 
   margin: 0;
 }
 
 h3 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
+  font-size: $font__size-24;
+  font-weight: $font__weight-400;
+  line-height: $line__height-36;
 
   margin: 0;
 }
@@ -60,16 +60,8 @@ button {
   padding: 0;
 }
 
-%button {
-  font-size: 18px;
-  color: $color__gray-99;
-  font-weight: 400;
-}
-
 .button {
-  font-size: 18px;
-  color: $color__gray-99;
-  font-weight: 400;
+  @extend %button;
 
   &:hover {
     color: $color__cosmos;
@@ -95,17 +87,23 @@ button {
   &:active {
     color: $color__white;
   }
+
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
 }
 
 .button__outlined-md {
-  font-size: 36px;
-  line-height: 42px;
+  @extend %button__outlined-md;
 }
 
 .button-contained {
   color: $color__white;
-  font-size: 36px;
-  line-height: 42px;
+  @extend %button__outlined-md;
   text-transform: uppercase;
 
   padding: 20px 59px;
