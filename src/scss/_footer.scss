@@ -7,9 +7,25 @@
     linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
   background-position: top 0 right 0, bottom 409px left 0, bottom 0 left 0, top 0 left 0;
 
+  @media screen and (max-width: $xxl) {
+    background: url('../images/submarine.png')  no-repeat,
+    url('../images/fish_adaptive.png') //*эту картинку не показывает не понимаю почему*\\
+       no-repeat, url('../images/footer_bckg.png')  no-repeat,
+    linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 0 right 91px, bottom 409px left 0px, bottom 0 left 0, top 0 left 0;
+    background-size: 210px 250px, 200px 130px, 100%, 100%;
+
+    padding-top: 294px;
+    padding-bottom: 590px;
+  }
+
   &__tariffs {
     @include flex(center, center);
     column-gap: 260px;
+
+    @media screen and (max-width: $xxl) {
+      column-gap: 120px;
+    }
   }
 
   &__tariff {
