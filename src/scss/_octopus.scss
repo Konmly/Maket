@@ -7,10 +7,6 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 128px bottom 109px, right 27px bottom 31px, top 0 left 0;
 
-  @media screen and (max-width: $xxl) {
-    padding-bottom: 83px;
-  }
-
   &__container {
     @include flex($align: center, $direction: column);
 
@@ -18,7 +14,7 @@
     height: calc(100vh - 84px);
 
     @media screen and (max-width: $xxl) {
-      width: 1120px;  
+      width: 1120px;
     }
   }
 
@@ -28,7 +24,7 @@
     width: 1280px;
 
     margin-top: auto;
-    
+
     @media screen and (max-width: $xxl) {
       width: 1120px;
     }

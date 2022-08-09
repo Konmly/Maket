@@ -26,13 +26,14 @@ body {
   margin: 0 auto;
 
   @media screen and (max-width: $xxl) {
-    width: 1120px ;
+    width: 1120px;
     margin: 0 auto;
   }
 
-  @media screen and (max-width: $xl) { //* это я считала размер ширины на 1024 по пропорции, пока это не используется*\\
-    width: 820px;
-  }
+  // это я считала размер ширины на 1024 по пропорции, пока это не используется
+  // @media screen and (max-width: $xl) {
+  //   width: 820px;
+  // }
 }
 
 h1 {
