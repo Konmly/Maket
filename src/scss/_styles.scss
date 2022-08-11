@@ -24,6 +24,16 @@ body {
 .container {
   width: 1520px;
   margin: 0 auto;
+
+  @media screen and (max-width: $xxl) {
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  // это я считала размер ширины на 1024 по пропорции, пока это не используется
+  // @media screen and (max-width: $xl) {
+  //   width: 820px;
+  // }
 }
 
 h1 {
@@ -119,6 +129,10 @@ button {
 
   &:active {
     background-color: $color__maroon;
+  }
+
+  @media screen and (max-width: $xxl) {
+    margin-top: 70px;
   }
 }
 
