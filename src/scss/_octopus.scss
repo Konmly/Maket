@@ -16,6 +16,11 @@
     @media screen and (max-width: $xxl) {
       width: 1120px;
     }
+
+    @media screen and (max-width: $xl) {
+      width: 815px;
+      height: calc(100vh - 200px);
+    }
   }
 
   &__img {
@@ -27,6 +32,10 @@
 
     @media screen and (max-width: $xxl) {
       width: 1120px;
+    }
+
+    @media screen and (max-width: $xxl) {
+      width: 815px;
     }
   }
 
