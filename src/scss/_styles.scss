@@ -30,10 +30,9 @@ body {
     margin: 0 auto;
   }
 
-  // это я считала размер ширины на 1024 по пропорции, пока это не используется
-  // @media screen and (max-width: $xl) {
-  //   width: 820px;
-  // }
+  @media screen and (max-width: $xl) {
+    width: 815px;
+  }
 }
 
 h1 {
@@ -50,6 +49,10 @@ h2 {
   line-height: $line__height-64;
 
   margin: 0;
+
+  @media screen and (max-width: $xl) {
+    font-size: 34px;
+  }
 }
 
 h3 {
@@ -109,6 +112,11 @@ button {
 
 .button__outlined-md {
   @extend %button__outlined-md;
+
+  @media screen and (max-width: $xl) {
+    font-size: 19px;
+    line-height: 22px;
+  }
 }
 
 .button-contained {

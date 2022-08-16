@@ -18,12 +18,26 @@
       top 1065px right 94px, top 0 left 0;
   }
 
+  @media screen and (max-width: $xl) {
+    padding-top: 250px;
+    background: url('../images/diver_bubble.png') 100% no-repeat,
+      url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+      url('../images/diver_bubl.png') 100% no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 157px left 9px, top 90px right -10px, top 1060px left 40px,
+      top 1065px right 45px, top 0 left 0;
+  }
+
   &__cards {
     @include flex($wrap: wrap);
     column-gap: 44px;
 
     @media screen and (max-width: $xxl) {
       column-gap: 20px;
+    }
+
+    @media screen and (max-width: $xl) {
+      column-gap: 15px;
     }
   }
 
@@ -51,6 +65,12 @@
 
     &:nth-child(2n + 3) {
       margin-top: -76px;
+    }
+
+    @media screen and (max-width: $xl) {
+      height: 290px;
+
+      padding: 46px 32px 0px 67px;
     }
   }
 
@@ -81,6 +101,12 @@
     font-size: 96px;
     font-weight: 900;
     line-height: 112px;
+
+    @media screen and (max-width: $xl) {
+      left: -10px;
+      top: 23px;
+      font-size: 51.2px;
+    }
   }
 
   &__video {
