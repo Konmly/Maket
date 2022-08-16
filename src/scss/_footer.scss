@@ -24,8 +24,8 @@
     background: url('../images/submarine.png') no-repeat,
       url('../images/fish_adaptive.png') no-repeat, url('../images/footer_bckg.png') no-repeat,
       linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
-    background-position: top 0 right 0px, bottom 205px left 0px, bottom 0 left 0, top 0 left 0;
-    background-size: 210px 260px, 300px 200px, 100%, 100%;
+    background-position: top 0 right 0px, bottom 185px left 0px, bottom 0 left 0, top 0 left 0;
+    background-size: 195px 240px, 280px 200px, 100%, 100%;
   }
 
   &__tariffs {
@@ -51,6 +51,10 @@
     background-position: center;
     filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
 
+    @media screen and (max-width: $xl) {
+      width: 340px;
+    }
+
     &_left {
       padding: 50px 65px 45px;
 
@@ -69,10 +73,6 @@
       @media screen and (max-width: $xl) {
         padding: 27px 30px 54px;
       }
-    }
-
-    @media screen and (max-width: $xl) {
-      width: 340px;
     }
   }
 
