@@ -1,4 +1,5 @@
 // colors
+
 $color__gray-95: #f2f2f2;
 $color__gray-99: #fcfcfc;
 $color__violet: #523a64;
@@ -9,16 +10,49 @@ $color__cosmos: #ffd9d9;
 $color__japonica: #d75c78;
 $color__mandy: #df4c6e;
 $color__maroon: #c83e5d;
-$font__size-64: 64px;
-$font__size-48: 48px;
-$font__size-24: 24px;
+
+//font-size
+
+$font__size-6: 6px;
+$font__size-14: 14px;
+$font__size-16: 16px;
 $font__size-18: 18px;
-$font__weight-700: 700;
-$font__weight-500: 500;
+$font__size-20: 20px;
+$font__size-24: 24px;
+$font__size-26: 26px;
+$font__size-34: 34px;
+$font__size-36: 36px;
+$font__size-40: 40px;
+$font__size-48: 48px;
+$font__size-52: 52px;
+$font__size-64: 64px;
+$font__size-96: 96px;
+
+//font-weight
+
 $font__weight-400: 400;
-$line__height-75: 75px;
-$line__height-64: 64px;
+$font__weight-500: 500;
+$font__weight-700: 700;
+$font__weight-900: 900;
+
+//line-height
+
+$line__height-16: 16px;
+$line__height-18: 18px;
+$line__height-20: 20px;
+$line__height-22: 22px;
+$line__height-26: 26px;
+$line__height-28: 28px;
+$line__height-30: 30px;
 $line__height-36: 36px;
+$line__height-40: 40px;
+$line__height-42: 42px;
+$line__height-64: 64px;
+$line__height-72: 72px;
+$line__height-75: 75px;
+$line__height-80: 80px;
+$line__height-96: 96px;
+$line__height-112: 112px;
 
 // mixin
 
@@ -33,14 +67,14 @@ $line__height-36: 36px;
 // inheritance
 
 %button {
-  font-size: 18px;
+  font-size: $font__size-18;
   color: $color__gray-99;
-  font-weight: 400;
+  font-weight: $font__weight-400;
 }
 
 %button__outlined-md {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: $font__size-36;
+  line-height: $line__height-42;
 }
 
 // breakpoints

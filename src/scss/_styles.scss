@@ -47,8 +47,8 @@ h1 {
   margin: 0;
 
   @media screen and (max-width: $md) {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: $font__size-26;
+    line-height: $line__height-30;
   }
 }
 
@@ -60,11 +60,11 @@ h2 {
   margin: 0;
 
   @media screen and (max-width: $xl) {
-    font-size: 34px;
+    font-size: $font__size-34;
   }
 
   @media screen and (max-width: $md) {
-    font-size: 25px;
+    font-size: $font__size-24;
   }
 }
 
@@ -76,8 +76,8 @@ h3 {
   margin: 0;
 
   @media screen and (max-width: $md) {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: $font__size-14;
+    line-height: $line__height-18;
   }
 }
 
@@ -103,7 +103,7 @@ button {
   }
 
   @media screen and (max-width: $md) {
-    font-size: 7px;
+    font-size: $font__size-6;
   }
 }
 
@@ -120,7 +120,7 @@ button {
 
     border: 1px solid $color__gray-99;
 
-    font-size: 13px;
+    font-size: $font__size-14;
   }
 
   &:hover {
@@ -144,8 +144,8 @@ button {
   @extend %button__outlined-md;
 
   @media screen and (max-width: $xl) {
-    font-size: 19px;
-    line-height: 22px;
+    font-size: $font__size-18;
+    line-height: $line__height-22;
   }
 }
 
@@ -176,8 +176,8 @@ button {
   @media screen and (max-width: $md) {
     margin-top: 30px;
 
-    font-size: 20px;
-    line-height: 26px;
+    font-size: $font__size-20;
+    line-height: $line__height-26;
 
     padding: 10px 30px;
 

@@ -27,8 +27,8 @@
 
     @media screen and (max-width: $md) {
       margin-bottom: 20px;
-      font-size: 13px;
-      line-height: 15px;
+      font-size: $font__size-14;
+      line-height: $line__height-16;
     }
   }
 }

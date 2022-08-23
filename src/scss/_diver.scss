@@ -95,26 +95,26 @@
   }
 
   &__card-termin {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: $font__size-24;
+    line-height: $line__height-28;
     color: $color__gray-95;
-    font-weight: 700;
+    font-weight: $font__weight-700;
 
     @media screen and (max-width: $md) {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: $font__size-16;
+      line-height: $line__height-20;
     }
   }
 
   &__card-description {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: $font__size-18;
+    font-weight: $font__weight-400;
     color: $color__gray-95;
 
     margin-top: 25px;
 
     @media screen and (max-width: $md) {
-      font-size: 15px;
+      font-size: $font__size-14;
     }
   }
 
@@ -127,14 +127,14 @@
     height: 90px;
 
     color: $color__pearly-purple;
-    font-size: 96px;
-    font-weight: 900;
-    line-height: 112px;
+    font-size: $font__size-96;
+    font-weight: $font__weight-900;
+    line-height: $line__height-112;
 
     @media screen and (max-width: $xl) {
       left: -10px;
       top: 23px;
-      font-size: 51.2px;
+      font-size: $font__size-52;
     }
   }
 
@@ -160,14 +160,14 @@
     @include flex($direction: column);
 
     color: $color__white-smoke;
-    font-size: 64px;
-    line-height: 96px;
+    font-size: $font__size-64;
+    line-height: $line__height-96;
 
     margin-bottom: 100px;
 
     @media screen and (max-width: $md) {
-      font-size: 40px;
-      line-height: 80px;
+      font-size: $font__size-40;
+      line-height: $line__height-80;
     }
   }
 }
