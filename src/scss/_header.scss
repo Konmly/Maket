@@ -15,9 +15,20 @@
   &__logo {
     width: 115px;
     height: 114px;
+
+    @media screen and (max-width: $md) {
+      width: 67px;
+      height: 66px;
+    }
   }
 
   &__button {
     margin-right: 30px;
+
+    @media screen and (max-width: $md) {
+      margin-bottom: 20px;
+      font-size: $font__size-14;
+      line-height: $line__height-16;
+    }
   }
 }

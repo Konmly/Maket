@@ -33,6 +33,10 @@ body {
   @media screen and (max-width: $xl) {
     width: 815px;
   }
+
+  @media screen and (max-width: $md) {
+    width: 608px;
+  }
 }
 
 h1 {
@@ -41,6 +45,11 @@ h1 {
   line-height: $line__height-75;
 
   margin: 0;
+
+  @media screen and (max-width: $md) {
+    font-size: $font__size-26;
+    line-height: $line__height-30;
+  }
 }
 
 h2 {
@@ -51,7 +60,11 @@ h2 {
   margin: 0;
 
   @media screen and (max-width: $xl) {
-    font-size: 34px;
+    font-size: $font__size-34;
+  }
+
+  @media screen and (max-width: $md) {
+    font-size: $font__size-24;
   }
 }
 
@@ -61,6 +74,11 @@ h3 {
   line-height: $line__height-36;
 
   margin: 0;
+
+  @media screen and (max-width: $md) {
+    font-size: $font__size-14;
+    line-height: $line__height-18;
+  }
 }
 
 button {
@@ -83,15 +101,27 @@ button {
   &:active {
     color: $color__white;
   }
+
+  @media screen and (max-width: $md) {
+    font-size: $font__size-6;
+  }
 }
 
 .button-outline {
   @extend %button;
 
   border-radius: 5px;
-  border: 2px solid #fcfcfc;
+  border: 2px solid $color__gray-99;
 
   padding: 5px 30px;
+
+  @media screen and (max-width: $md) {
+    padding: 5px 20px;
+
+    border: 1px solid $color__gray-99;
+
+    font-size: $font__size-14;
+  }
 
   &:hover {
     color: $color__cosmos;
@@ -114,8 +144,8 @@ button {
   @extend %button__outlined-md;
 
   @media screen and (max-width: $xl) {
-    font-size: 19px;
-    line-height: 22px;
+    font-size: $font__size-18;
+    line-height: $line__height-22;
   }
 }
 
@@ -141,6 +171,17 @@ button {
 
   @media screen and (max-width: $xxl) {
     margin-top: 70px;
+  }
+
+  @media screen and (max-width: $md) {
+    margin-top: 30px;
+
+    font-size: $font__size-20;
+    line-height: $line__height-26;
+
+    padding: 10px 30px;
+
+    border-radius: 3px;
   }
 }
 
