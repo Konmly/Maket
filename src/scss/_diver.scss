@@ -24,12 +24,32 @@
       url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
       url('../images/diver_bubl.png') 100% no-repeat,
       linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
-    background-position: top 340px left 10px,top 110px right 85px,top 1060px left 75px,top 990px right 30px,top 0 left 0;
-    background-size: 100px 250px,495px 410px,370px 290px,70px 70px,100%;
+    background-position: top 340px left 10px, top 110px right 85px, top 1060px left 75px,
+      top 990px right 30px, top 0 left 0;
+    background-size: 100px 250px, 495px 410px, 370px 290px, 70px 70px, 100%;
+  }
+
+  @media screen and (max-width: $lg) {
+    padding-top: 230px;
+    background: url('../images/diver_bubble.png') 100% no-repeat,
+      url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+      url('../images/diver_bubl.png') 100% no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 200px left 60px, top 110px right 85px, top 995px left 75px,
+      top 925px right 85px, top 0 left 0;
+    background-size: 150px 390px, 445px 360px, 370px 290px, 70px 70px, 100%;
+  }
+
+  @media screen and (max-width: $md) {
+    padding-top: 150px;
+    background: url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 110px right 5px, top 995px left 5px, top 0 left 0;
+    background-size: 345px 280px, 370px 290px, 100%;
   }
 
   &__cards {
-    @include flex($wrap: wrap);
+    @include flex($wrap: wrap, $justify: center);
     column-gap: 44px;
 
     @media screen and (max-width: $xxl) {
@@ -38,10 +58,6 @@
 
     @media screen and (max-width: $xl) {
       column-gap: 15px;
-    }
-
-    @media screen and (max-width: $xl) {
-      column-gap: 10px;
     }
   }
 
@@ -74,13 +90,21 @@
     @media screen and (max-width: $xxl) {
       height: 345px;
 
-      padding: 85px 50px 0px 100px ;
+      padding: 85px 50px 0px 100px;
     }
 
     @media screen and (max-width: $xl) {
       height: 290px;
 
       padding: 46px 90px 0px 67px;
+    }
+
+    @media screen and (max-width: $lg) {
+      padding: 35px 65px 0px 70px;
+    }
+
+    @media screen and (max-width: $md) {
+      height: 270px;
     }
   }
 
@@ -89,6 +113,11 @@
     line-height: $line__height-28;
     color: $color__gray-95;
     font-weight: $font__weight-700;
+
+    @media screen and (max-width: $lg) {
+      font-size: $font__size-20;
+      line-height: $line__height-26;
+    }
   }
 
   &__card-description {
@@ -97,6 +126,10 @@
     color: $color__gray-95;
 
     margin-top: 25px;
+
+    @media screen and (max-width: $lg) {
+      font-size: $font__size-16;
+    }
   }
 
   &__card-number {
@@ -126,6 +159,14 @@
     @media screen and (max-width: $xxl) {
       padding-top: 160px;
     }
+
+    @media screen and (max-width: $xl) {
+      padding-top: 150px;
+    }
+
+    @media screen and (max-width: $lg) {
+      padding-top: 140px;
+    }
   }
 }
 
@@ -146,6 +187,10 @@
     @media screen and (max-width: $xl) {
       font-size: $font__size-48;
       line-height: $line__height-80;
+    }
+
+    @media screen and (max-width: $lg) {
+      margin-bottom: 70px;
     }
   }
 }

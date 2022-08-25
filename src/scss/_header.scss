@@ -17,8 +17,8 @@
     height: 114px;
 
     @media screen and (max-width: $xl) {
-    width: 70px;
-    height: 69px;
+      width: 70px;
+      height: 69px;
     }
   }
 
@@ -26,9 +26,15 @@
     margin-right: 30px;
 
     @media screen and (max-width: $xl) {
-      margin-bottom: 26px;
+      margin-right: 26px;
       font-size: $font__size-16;
       line-height: $line__height-18;
+    }
+
+    @media screen and (max-width: $lg) {
+      margin-right: 20px;
+      font-size: $font__size-14;
+      line-height: $line__height-16;
     }
   }
 }
