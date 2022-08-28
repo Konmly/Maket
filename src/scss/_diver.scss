@@ -48,6 +48,14 @@
     background-size: 345px 280px, 370px 290px, 100%;
   }
 
+  @media screen and (max-width: $sm) {
+    padding-top: 100px;
+    background: url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 110px right 5px, top 855px left 5px, top 0 left 0;
+    background-size: 310px 260px, 285px 250px, 100%;
+  }
+
   &__cards {
     @include flex($wrap: wrap, $justify: center);
     column-gap: 44px;
@@ -106,6 +114,10 @@
     @media screen and (max-width: $md) {
       height: 270px;
     }
+
+    @media screen and (max-width: $sm) {
+      padding: 30px 25px 0 65px;
+    }
   }
 
   &__card-termin {
@@ -118,6 +130,11 @@
       font-size: $font__size-20;
       line-height: $line__height-26;
     }
+
+    @media screen and (max-width: $sm) {
+      font-size: $font__size-16;
+      line-height: $line__height-20;
+    }
   }
 
   &__card-description {
@@ -129,6 +146,10 @@
 
     @media screen and (max-width: $lg) {
       font-size: $font__size-16;
+    }
+
+    @media screen and (max-width: $sm) {
+      font-size: $font__size-14;
     }
   }
 
@@ -151,6 +172,10 @@
       font-size: $font__size-64;
       font-weight: $font__weight-700;
     }
+
+    @media screen and (max-width: $sm) {
+      left: -12px;
+    }
   }
 
   &__video {
@@ -166,6 +191,10 @@
 
     @media screen and (max-width: $lg) {
       padding-top: 140px;
+    }
+
+    @media screen and (max-width: $sm) {
+      padding-top: 80px;
     }
   }
 }
@@ -191,6 +220,11 @@
 
     @media screen and (max-width: $lg) {
       margin-bottom: 70px;
+    }
+
+    @media screen and (max-width: $sm) {
+      font-size: $font__size-40;
+      line-height: $line__height-60;
     }
   }
 }
