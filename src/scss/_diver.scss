@@ -56,6 +56,32 @@
     background-size: 310px 260px, 285px 250px, 100%;
   }
 
+  @media screen and (max-width: $xs) {
+    padding-top: 100px;
+    background: linear-gradient(
+      178.68deg,
+      #4f3963 -2.24%,
+      #764469 31.33%,
+      #5e3e66 76.25%,
+      #2c2142 94.12%
+    );
+  }
+
+  &__mobile-text {
+    display: none;
+
+    @media screen and (max-width: $xs) {
+      @include flex($direction: column, $align: center);
+
+      font-size: $font__size-24;
+      line-height: $line__height-36;
+      font-weight: $font__weight-700;
+      color: $color__white-smoke;
+
+      margin-bottom: 80px;
+    }
+  }
+
   &__cards {
     @include flex($wrap: wrap, $justify: center);
     column-gap: 44px;
@@ -66,6 +92,12 @@
 
     @media screen and (max-width: $xl) {
       column-gap: 15px;
+    }
+
+    @media screen and (max-width: $xs) {
+      @include flex($direction: column, $align: center);
+
+      column-gap: 0px;
     }
   }
 
@@ -85,14 +117,26 @@
 
     &:nth-child(2) {
       margin-top: 232px;
+
+      @media screen and (max-width: $xs) {
+        margin-top: 20px;
+      }
     }
 
     &:nth-child(2n + 4) {
       margin-top: 160px;
+
+      @media screen and (max-width: $xs) {
+        margin-top: 20px;
+      }
     }
 
     &:nth-child(2n + 3) {
       margin-top: -76px;
+
+      @media screen and (max-width: $xs) {
+        margin-top: 20px;
+      }
     }
 
     @media screen and (max-width: $xxl) {
@@ -118,6 +162,10 @@
     @media screen and (max-width: $sm) {
       padding: 30px 25px 0 65px;
     }
+
+    @media screen and (max-width: $xs) {
+      padding: 30px 25px 50px 65px;
+    }
   }
 
   &__card-termin {
@@ -135,6 +183,13 @@
       font-size: $font__size-16;
       line-height: $line__height-20;
     }
+
+    @media screen and (max-width: $xs) {
+      font-size: $font__size-24;
+      line-height: $line__height-28;
+      color: $color__gray-95;
+      font-weight: $font__weight-700;
+    }
   }
 
   &__card-description {
@@ -150,6 +205,11 @@
 
     @media screen and (max-width: $sm) {
       font-size: $font__size-14;
+    }
+
+    @media screen and (max-width: $xs) {
+      font-size: $font__size-14;
+      line-height: $line__height-20;
     }
   }
 
@@ -196,12 +256,20 @@
     @media screen and (max-width: $sm) {
       padding-top: 80px;
     }
+
+    @media screen and (max-width: $xs) {
+      padding-top: 40px;
+    }
   }
 }
 
 .video {
   &__container {
     margin-bottom: 70px;
+
+    @media screen and (max-width: $xs) {
+      margin-bottom: 0px;
+    }
   }
 
   &__text {
@@ -225,6 +293,21 @@
     @media screen and (max-width: $sm) {
       font-size: $font__size-40;
       line-height: $line__height-60;
+    }
+
+    @media screen and (max-width: $xs) {
+      @include flex($direction: column, $align: center);
+
+      font-size: $font__size-24;
+      line-height: $line__height-36;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  &__player {
+    @media screen and (max-width: $xs) {
+      height: 461px;
     }
   }
 }

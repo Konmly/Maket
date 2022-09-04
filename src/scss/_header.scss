@@ -8,8 +8,16 @@
 
   padding-top: 75px;
 
+  @media screen and (max-width: $xs) {
+    padding-top: 25px;
+  }
+
   &__container {
     @include flex($justify: space-between, $align: center);
+
+    @media screen and (max-width: $xs) {
+      padding: 0px 10px;
+    }
   }
 
   &__logo {
@@ -19,6 +27,69 @@
     @media screen and (max-width: $xl) {
       width: 70px;
       height: 69px;
+    }
+
+    @media screen and (max-width: $xs) {
+      width: 50px;
+      height: 49px;
+    }
+  }
+
+  &__btns {
+    @media screen and (max-width: $xs) {
+      display: none;
+    }
+  }
+
+  &__mobile-button {
+    @media screen and (max-width: $xxl) {
+      display: none;
+    }
+
+    @media screen and (max-width: $xl) {
+      display: none;
+    }
+
+    @media screen and (max-width: $lg) {
+      display: none;
+    }
+
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+
+    @media screen and (max-width: $xs) {
+      display: block;
+    }
+  }
+
+  &__button-hamburger {
+    display: none;
+
+    @media screen and (max-width: $xs) {
+      position: relative;
+      display: block;
+      width: 30px;
+      height: 20px;
+      border-top: 4px solid $color__gray-99;
+      border-bottom: 4px solid $color__gray-99;
+
+      &:before {
+        position: absolute;
+        content: '';
+        top: 4px;
+        left: 0px;
+        width: 100%;
+        border-top: 4px solid $color__gray-99;
+      }
+
+      &:hover {
+        display: none;
+      }
     }
   }
 

@@ -54,8 +54,16 @@
     background-size: 140px 180px, 240px 160px, 100%, 100%;
   }
 
+  @media screen and (max-width: $xs) {
+    background: url('../images/fish_adaptive.png') no-repeat,
+      url('../images/footer_bckg.png') no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: bottom 140px left 0px, bottom 0 left 0, top 0 left 0;
+    background-size: 210px 145px, 100%, 100%;
+  }
+
   &__tariffs {
-    @include flex(center, center);
+    @include flex($justify: center, $align: center);
     column-gap: 260px;
 
     @media screen and (max-width: $xxl) {
@@ -68,6 +76,16 @@
 
     @media screen and (max-width: $sm) {
       column-gap: 40px;
+    }
+
+    @media screen and (max-width: $xl) {
+      width: 150px;
+    }
+
+    @media screen and (max-width: $xs) {
+      @include flex($direction: column, $align: center);
+
+      row-gap: 37px;
     }
   }
 
@@ -85,6 +103,10 @@
       width: 320px;
     }
 
+    @media screen and (max-width: $xs) {
+      background-size: 232%;
+    }
+
     &_left {
       padding: 50px 65px 45px;
 
@@ -92,6 +114,10 @@
 
       @media screen and (max-width: $xl) {
         padding: 25px 40px;
+      }
+
+      @media screen and (max-width: $xs) {
+        padding: 50px 50px 140px;
       }
     }
 
@@ -107,6 +133,10 @@
       @media screen and (max-width: $xl) {
         padding: 25px 20px 50px;
       }
+
+      @media screen and (max-width: $xs) {
+        padding: 70px 50px 130px;
+      }
     }
   }
 
@@ -117,6 +147,13 @@
 
     @media screen and (max-width: $xl) {
       line-height: $line__height-40;
+    }
+
+    @media screen and (max-width: $xs) {
+      display: block;
+
+      font-size: $font__size-24;
+      line-height: $line__height-36;
     }
   }
 
@@ -136,6 +173,14 @@
     @media screen and (max-width: $sm) {
       line-height: $line__height-28;
     }
+
+    @media screen and (max-width: $xs) {
+      font-size: $font__size-14;
+      line-height: $line__height-21;
+      font-weight: $font__weight-500;
+
+      margin-top: 20px;
+    }
   }
 
   &__button {
@@ -151,6 +196,14 @@
       padding: 6px 24px 6px 24px;
 
       border: 3px solid $color__white;
+    }
+
+    @media screen and (max-width: $xs) {
+      font-size: $font__size-24;
+      line-height: $line__height-28;
+
+      padding: 10px 25px;
+      margin-top: 100px;
     }
   }
 }
