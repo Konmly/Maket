@@ -16,19 +16,19 @@
     width: 115px;
     height: 114px;
 
-    @media screen and (max-width: $md) {
-      width: 67px;
-      height: 66px;
+    @media screen and (max-width: $xl) {
+    width: 70px;
+    height: 69px;
     }
   }
 
   &__button {
     margin-right: 30px;
 
-    @media screen and (max-width: $md) {
-      margin-bottom: 20px;
-      font-size: $font__size-14;
-      line-height: $line__height-16;
+    @media screen and (max-width: $xl) {
+      margin-bottom: 26px;
+      font-size: $font__size-16;
+      line-height: $line__height-18;
     }
   }
 }

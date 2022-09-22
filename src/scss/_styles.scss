@@ -27,15 +27,10 @@ body {
 
   @media screen and (max-width: $xxl) {
     width: 1120px;
-    margin: 0 auto;
   }
 
   @media screen and (max-width: $xl) {
-    width: 815px;
-  }
-
-  @media screen and (max-width: $md) {
-    width: 608px;
+    width: 1020px;
   }
 }
 
@@ -46,9 +41,9 @@ h1 {
 
   margin: 0;
 
-  @media screen and (max-width: $md) {
-    font-size: $font__size-26;
-    line-height: $line__height-30;
+  @media screen and (max-width: $xl) {
+    font-size: $font__size-40;
+    line-height: $line__height-64;
   }
 }
 
@@ -60,11 +55,8 @@ h2 {
   margin: 0;
 
   @media screen and (max-width: $xl) {
-    font-size: $font__size-34;
-  }
-
-  @media screen and (max-width: $md) {
-    font-size: $font__size-24;
+    font-size: $font__size-36;
+    line-height: $line__height-40;
   }
 }
 
@@ -75,9 +67,8 @@ h3 {
 
   margin: 0;
 
-  @media screen and (max-width: $md) {
-    font-size: $font__size-14;
-    line-height: $line__height-18;
+  @media screen and (max-width: $xl) {
+    font-size: $font__size-24;
   }
 }
 
@@ -101,10 +92,6 @@ button {
   &:active {
     color: $color__white;
   }
-
-  @media screen and (max-width: $md) {
-    font-size: $font__size-6;
-  }
 }
 
 .button-outline {
@@ -115,28 +102,24 @@ button {
 
   padding: 5px 30px;
 
-  @media screen and (max-width: $md) {
-    padding: 5px 20px;
+  &:hover {
+    color: $color__cosmos;
+  }
 
-    border: 1px solid $color__gray-99;
+  &:active {
+    color: $color__white;
+  }
 
+  &:hover {
+    color: $color__cosmos;
+  }
+
+  &:active {
+    color: $color__white;
+  }
+
+  @media screen and (max-width: $xl) {
     font-size: $font__size-14;
-  }
-
-  &:hover {
-    color: $color__cosmos;
-  }
-
-  &:active {
-    color: $color__white;
-  }
-
-  &:hover {
-    color: $color__cosmos;
-  }
-
-  &:active {
-    color: $color__white;
   }
 }
 
@@ -170,18 +153,10 @@ button {
   }
 
   @media screen and (max-width: $xxl) {
-    margin-top: 70px;
-  }
+    margin-top: 45px;
+    padding: 15px 59px;
 
-  @media screen and (max-width: $md) {
-    margin-top: 30px;
-
-    font-size: $font__size-20;
-    line-height: $line__height-26;
-
-    padding: 10px 30px;
-
-    border-radius: 3px;
+    font-size: $font__size-26;
   }
 }
 

@@ -7,12 +7,18 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 128px bottom 109px, right 27px bottom 31px, top 0 left 0;
 
-  @media screen and (max-width: $md) {
+  @media screen and (max-width: $xxl) {
+    padding-top: 190px;
+  }
+
+  @media screen and (max-width: $xl) {
+    padding-top: 112px;
     background-image: url('../images/bubble.png'), url('../images/Group_bubls.png'),
-      linear-gradient(252.43deg, #d45b78 0.01%, #4b3862 101.01%);
+    linear-gradient(252.43deg, #d45b78 0.01%, #4b3862 101.01%);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: left 35px bottom 525px, right 27px bottom 530px, top 0 left 0;
-    background-size: 75px 125px, 63px 100px, 100%;
+    background-position: left 15px bottom 90px, right 40px bottom 100px, top 0 left 0;
+    background-size: 130px 215px, 85px 125px, 100%;
+    min-height: auto;
   }
 
   &__container {
@@ -26,14 +32,7 @@
     }
 
     @media screen and (max-width: $xl) {
-      width: 815px;
-      height: calc(100vh - 200px);
-    }
-
-    @media screen and (max-width: $md) {
-      width: 448px;
-
-      min-height: 950px;
+      width: 1120px;
     }
   }
 
@@ -48,13 +47,8 @@
       width: 1120px;
     }
 
-    @media screen and (max-width: $xxl) {
-      width: 815px;
-    }
-
-    @media screen and (max-width: $md) {
-      width: 512px;
-      margin-top: 120px;
+    @media screen and (max-width: $xl) {
+      width: 668px;
     }
   }
 
@@ -62,6 +56,10 @@
     color: $color__gray-99;
 
     margin-top: 14px;
+
+    @media screen and (max-width: $xl) {
+    margin-top: 10px;
+    }
   }
 
   &__subtitle {
@@ -77,11 +75,8 @@
       margin-top: 30px;
     }
 
-    @media screen and (max-width: $md) {
-      width: 556px;
-      height: 52px;
-
-      margin-top: 20px;
+    @media screen and (max-width: $xl) {
+      margin-top: 5px;
     }
   }
 }
