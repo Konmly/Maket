@@ -46,6 +46,14 @@
     background-size: 175px 220px, 260px 180px, 100%, 100%;
   }
 
+  @media screen and (max-width: $sm) {
+    background: url('../images/submarine.png') no-repeat,
+      url('../images/fish_adaptive.png') no-repeat, url('../images/footer_bckg.png') no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 0 right 0px, bottom 140px left 0px, bottom 0 left 0, top 0 left 0;
+    background-size: 140px 180px, 240px 160px, 100%, 100%;
+  }
+
   &__tariffs {
     @include flex(center, center);
     column-gap: 260px;
@@ -56,6 +64,10 @@
 
     @media screen and (max-width: $xl) {
       column-gap: 80px;
+    }
+
+    @media screen and (max-width: $sm) {
+      column-gap: 40px;
     }
   }
 
@@ -119,6 +131,10 @@
     @media screen and (max-width: $xl) {
       margin-top: 22px;
       font-size: $font__size-18;
+    }
+
+    @media screen and (max-width: $sm) {
+      line-height: $line__height-28;
     }
   }
 
