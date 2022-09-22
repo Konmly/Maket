@@ -32,6 +32,14 @@ body {
   @media screen and (max-width: $xl) {
     width: 1020px;
   }
+
+  @media screen and (max-width: $lg) {
+    width: 760px;
+  }
+
+  @media screen and (max-width: $md) {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -44,6 +52,11 @@ h1 {
   @media screen and (max-width: $xl) {
     font-size: $font__size-40;
     line-height: $line__height-64;
+  }
+
+  @media screen and (max-width: $lg) {
+    font-size: $font__size-36;
+    line-height: $line__height-60;
   }
 }
 
@@ -68,7 +81,11 @@ h3 {
   margin: 0;
 
   @media screen and (max-width: $xl) {
-    font-size: $font__size-24;
+    font-size: $font__size-20;
+  }
+
+  @media screen and (max-width: $lg) {
+    font-size: $font__size-18;
   }
 }
 
@@ -119,6 +136,10 @@ button {
   }
 
   @media screen and (max-width: $xl) {
+    font-size: $font__size-16;
+  }
+
+  @media screen and (max-width: $lg) {
     font-size: $font__size-14;
   }
 }
@@ -152,11 +173,16 @@ button {
     background-color: $color__maroon;
   }
 
-  @media screen and (max-width: $xxl) {
+  @media screen and (max-width: $xl) {
     margin-top: 45px;
     padding: 15px 59px;
 
     font-size: $font__size-26;
+  }
+
+  @media screen and (max-width: $lg) {
+    margin-top: 40px;
+    padding: 7px 55px;
   }
 }
 

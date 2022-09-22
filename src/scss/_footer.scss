@@ -28,6 +28,24 @@
     background-size: 195px 240px, 280px 200px, 100%, 100%;
   }
 
+  @media screen and (max-width: $lg) {
+    padding-top: 170px;
+    padding-bottom: 300px;
+    background: url('../images/submarine.png') no-repeat,
+      url('../images/fish_adaptive.png') no-repeat, url('../images/footer_bckg.png') no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 0 right 0px, bottom 185px left 0px, bottom 0 left 0, top 0 left 0;
+    background-size: 175px 220px, 260px 180px, 100%, 100%;
+  }
+
+  @media screen and (max-width: $md) {
+    background: url('../images/submarine.png') no-repeat,
+      url('../images/fish_adaptive.png') no-repeat, url('../images/footer_bckg.png') no-repeat,
+      linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
+    background-position: top 0 right 0px, bottom 120px left 0px, bottom 0 left 0, top 0 left 0;
+    background-size: 175px 220px, 260px 180px, 100%, 100%;
+  }
+
   &__tariffs {
     @include flex(center, center);
     column-gap: 260px;
