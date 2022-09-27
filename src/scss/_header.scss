@@ -135,22 +135,31 @@
 
     @media screen and (max-width: $xs) {
       display: block;
+
+      position: fixed;
+      right: 0;
+      top: 70px;
+
+      width: 125px;
+
       transform: translateX(0);
-      margin: 20px;
-      width: 200px;
+      transition: 0.5s;
 
       .header__mobile-link {
         display: block;
 
         padding: 10px;
 
-        color: $color__gray-95;
-        border-bottom: 1px solid $color__gray-95;
-        background-color: $color__mandy;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
+        color: $color__white;
+        border-bottom: 1px solid $color__red-value;
+        background-color: $color__violet;
 
         &:hover {
-          transition: 00.5s;
-          background-color: $color__maroon;
+          transition: 0.5s;
+          background-color: $color__japonica;
         }
       }
     }
