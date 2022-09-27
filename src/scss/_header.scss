@@ -94,14 +94,17 @@
 
       &:focus {
         &::before {
-          transform: rotate(33deg);
+          transform: rotate(45deg);
+          width: 75%;
         }
 
         &::after {
-          transform: rotate(-33deg);
+          transform: rotate(-45deg);
+          width: 75%;
         }
-        &__button-cross {
+        .header__button-cross {
           opacity: 0;
+          width: 0;
         }
       }
     }
@@ -128,23 +131,27 @@
 
   &__mobile-menu {
     display: none;
-
-    & li {
-      list-style: none;
-    }
-
-    & a {
-      text-decoration: none;
-    }
+    transform: translateX(120%);
 
     @media screen and (max-width: $xs) {
-      &:hover {
-        @include flex ($direction: column, $align: center);
+      display: block;
+      transform: translateX(0);
+      margin: 20px;
+      width: 200px;
 
-        width: 100%;
-        height: 100%;
+      .header__mobile-link {
+        display: block;
 
         padding: 10px;
+
+        color: $color__gray-95;
+        border-bottom: 1px solid $color__gray-95;
+        background-color: $color__mandy;
+
+        &:hover {
+          transition: 00.5s;
+          background-color: $color__maroon;
+        }
       }
     }
   }
