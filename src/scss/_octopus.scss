@@ -141,10 +141,8 @@
   }
 
   &__subtitle {
-    width: 890px;
-    height: 72px;
-
-    text-align: center;
+    @include flex($direction: column, $align: center);
+    
     color: $color__gray-95;
 
     margin-top: 37px;
