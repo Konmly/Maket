@@ -142,8 +142,11 @@
 
       width: 125px;
 
-      transform: translateX(0);
       transition: 0.5s;
+      
+      &:active {
+      transform: translateX(0);
+      }
 
       .header__mobile-link {
         display: block;
