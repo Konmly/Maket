@@ -160,15 +160,17 @@
     }
 
     @media screen and (max-width: $sm) {
-      width: 500px;
+      width: 535px;
 
       margin-top: 10px;
     }
 
     @media screen and (max-width: $xs) {
-      width: 300px;
+      width: 315px;
 
       margin-top: 30px;
+
+      text-align: center;
     }
   }
 }

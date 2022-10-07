@@ -42,25 +42,7 @@
   }
 
   &__mobile-button {
-    @media screen and (max-width: $xxl) {
-      display: none;
-    }
-
-    @media screen and (max-width: $xl) {
-      display: none;
-    }
-
-    @media screen and (max-width: $lg) {
-      display: none;
-    }
-
-    @media screen and (max-width: $md) {
-      display: none;
-    }
-
-    @media screen and (max-width: $sm) {
-      display: none;
-    }
+    display: none;
 
     @media screen and (max-width: $xs) {
       display: block;
@@ -102,6 +84,7 @@
           transform: rotate(-45deg);
           width: 75%;
         }
+
         .header__button-cross {
           opacity: 0;
           width: 0;
@@ -131,6 +114,7 @@
 
   &__mobile-menu {
     display: none;
+
     transform: translateX(120%);
 
     @media screen and (max-width: $xs) {
@@ -143,9 +127,9 @@
       width: 125px;
 
       transition: 0.5s;
-      
+
       &:active {
-      transform: translateX(0);
+        transform: translateX(0);
       }
 
       .header__mobile-link {
