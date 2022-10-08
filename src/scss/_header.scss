@@ -74,7 +74,8 @@
         background-color: $color__gray-99;
       }
 
-      &:focus {
+      &:focus // тут нужно будет поменять на класс active
+      {
         &::before {
           transform: rotate(45deg);
           width: 75%;
@@ -108,46 +109,6 @@
 
       &:focus {
         opacity: 0;
-      }
-    }
-  }
-
-  &__mobile-menu {
-    display: none;
-
-    transform: translateX(120%);
-
-    @media screen and (max-width: $xs) {
-      display: block;
-
-      position: fixed;
-      right: 0;
-      top: 70px;
-
-      width: 125px;
-
-      transition: 0.5s;
-
-      &:active {
-        transform: translateX(0);
-      }
-
-      .header__mobile-link {
-        display: block;
-
-        padding: 10px;
-
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-
-        color: $color__white;
-        border-bottom: 1px solid $color__red-value;
-        background-color: $color__violet;
-
-        &:hover {
-          transition: 0.5s;
-          background-color: $color__japonica;
-        }
       }
     }
   }
