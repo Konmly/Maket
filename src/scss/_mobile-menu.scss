@@ -1,4 +1,4 @@
-.mobile__menu {
+.sidebar {
   display: none;
 
   transform: translateX(120%);
@@ -14,12 +14,11 @@
 
     transition: 0.5s;
 
-    &:active //тут нужно будет поменять на класс active
-    {
+    .sidebar__nav_active {
       transform: translateX(0);
     }
 
-    .mobile__link {
+    .sidebar__link {
       display: block;
 
       padding: 10px;

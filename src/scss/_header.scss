@@ -74,8 +74,7 @@
         background-color: $color__gray-99;
       }
 
-      &:focus // тут нужно будет поменять на класс active
-      {
+      .header__mobile-button_active {
         &::before {
           transform: rotate(45deg);
           width: 75%;
