@@ -96,7 +96,6 @@
   &__button-cross {
     display: none;
 
-    .header__button-cross_active {
       @media screen and (max-width: $xs) {
         display: block;
         height: 4px;
@@ -113,4 +112,3 @@
       }
     }
   }
-}
