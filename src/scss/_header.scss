@@ -74,7 +74,8 @@
         background-color: $color__gray-99;
       }
 
-      .header__mobile-button_active {
+      &:active // тут поменять на класс кнопку 
+      {
         &::before {
           transform: rotate(45deg);
           width: 75%;
@@ -96,7 +97,6 @@
   &__button-cross {
     display: none;
 
-    .header__button-cross_active {
       @media screen and (max-width: $xs) {
         display: block;
         height: 4px;
@@ -113,4 +113,3 @@
       }
     }
   }
-}

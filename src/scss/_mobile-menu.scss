@@ -3,32 +3,47 @@
 
   transform: translateX(120%);
 
+  &__logo {
+    width: 73px;
+    height: 74px;
+
+    margin: 20px 25px;
+  }
+
   @media screen and (max-width: $xs) {
-    display: block;
+    @include flex($direction: column, $align:center);
 
     position: fixed;
+    z-index: 3;
     right: 0;
     top: 70px;
 
     width: 125px;
+    height: 100vh;
 
     transition: 0.5s;
 
-    .sidebar__nav_active {
+    background-color: $color__violet;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    text-align: center;
+
+    &:active // тут поставить класс аквтив сайдбар
+     {
       transform: translateX(0);
     }
 
+    &__list-item_border {
+      border-top: 2px solid $color__red-value;
+    }
     .sidebar__link {
       display: block;
 
       padding: 10px;
 
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
-
       color: $color__white;
-      border-bottom: 1px solid $color__red-value;
-      background-color: $color__violet;
+      border-bottom: 2px solid $color__red-value;
 
       &:hover {
         transition: 0.5s;
