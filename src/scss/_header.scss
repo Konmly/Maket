@@ -96,18 +96,20 @@
   &__button-cross {
     display: none;
 
-    @media screen and (max-width: $xs) {
-      display: block;
-      height: 4px;
-      width: 30px;
-
-      transition: 0.5s;
-      transform-origin: right;
-
-      background-color: $color__gray-99;
-
-      &:focus {
-        opacity: 0;
+    .header__button-cross_active {
+      @media screen and (max-width: $xs) {
+        display: block;
+        height: 4px;
+        width: 30px;
+  
+        transition: 0.5s;
+        transform-origin: right;
+  
+        background-color: $color__gray-99;
+  
+        &:focus {
+          opacity: 0;
+        }
       }
     }
   }
