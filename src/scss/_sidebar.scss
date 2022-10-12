@@ -1,0 +1,26 @@
+.sidebar {
+  display: none;
+
+  @media screen and (max-width: $xs) {
+    @include flex($direction: column, $align:center);
+
+    position: fixed;
+    z-index: 3;
+    left: 0;
+
+    transform: translateX(-120%);
+
+    width: 116px;
+    height: 100vh;
+
+    transition: 0.5s;
+
+    text-align: center;
+
+    background-color: $color__violet;
+
+    &__active {
+      transform: translateX(0);
+    }
+  }
+}

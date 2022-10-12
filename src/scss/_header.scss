@@ -41,7 +41,7 @@
     }
   }
 
-  &__mobile-button {
+  &__hamburger-wrap {
     display: none;
 
     @media screen and (max-width: $xs) {
@@ -49,7 +49,7 @@
     }
   }
 
-  &__button-hamburger {
+  &__hamburger-button {
     display: none;
 
     @media screen and (max-width: $xs) {
@@ -61,7 +61,7 @@
       width: 30px;
       height: 20px;
 
-      &:before,
+      &::before,
       &::after {
         content: '';
         height: 4px;
@@ -74,18 +74,21 @@
         background-color: $color__gray-99;
       }
 
-      .header__mobile-button_active {
+      .header__hamburger-wrap_active {
         &::before {
           transform: rotate(45deg);
+        }
+
+        &::before,
+        &::after {
           width: 75%;
         }
 
         &::after {
           transform: rotate(-45deg);
-          width: 75%;
         }
 
-        .header__button-cross {
+        .button-hamburger__item-cross {
           opacity: 0;
           width: 0;
         }
@@ -93,23 +96,21 @@
     }
   }
 
-  &__button-cross {
+  .button-hamburger__item {
     display: none;
 
-    .header__button-cross_active {
-      @media screen and (max-width: $xs) {
-        display: block;
-        height: 4px;
-        width: 30px;
-  
-        transition: 0.5s;
-        transform-origin: right;
-  
-        background-color: $color__gray-99;
-  
-        &:focus {
-          opacity: 0;
-        }
+    @media screen and (max-width: $xs) {
+      display: block;
+      height: 4px;
+      width: 30px;
+
+      transition: 0.5s;
+      transform-origin: right;
+
+      background-color: $color__gray-99;
+
+      &:focus {
+        opacity: 0;
       }
     }
   }
