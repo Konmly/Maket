@@ -1,13 +1,13 @@
 .sidebar {
   display: none;
 
-  transform: translateX(120%);
+  transform: translateY(-120%);
 
   &__logo {
-    width: 73px;
-    height: 74px;
+    width: 50px;
+    height: 49px;
 
-    margin: 20px 25px;
+    margin-top: 25px;
   }
 
   @media screen and (max-width: $xs) {
@@ -15,10 +15,9 @@
 
     position: fixed;
     z-index: 3;
-    right: 0;
-    top: 70px;
+    left: 0;
 
-    width: 125px;
+    width: 116px;
     height: 100vh;
 
     transition: 0.5s;
