@@ -61,7 +61,7 @@
       width: 30px;
       height: 20px;
 
-      &:before,
+      &::before,
       &::after {
         content: '';
         height: 4px;
@@ -74,15 +74,18 @@
         background-color: $color__gray-99;
       }
 
-      .header__hamburger_active {
+      .header__hamburger-wrap_active {
         &::before {
           transform: rotate(45deg);
+        }
+
+        &::before,
+        &::after {
           width: 75%;
         }
 
         &::after {
           transform: rotate(-45deg);
-          width: 75%;
         }
 
         .button-hamburger__item-cross {
