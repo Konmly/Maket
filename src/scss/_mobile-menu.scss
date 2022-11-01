@@ -1,0 +1,40 @@
+.sidebar {
+  display: none;
+
+  @media screen and (max-width: $xs) {
+    display: block;
+
+    position: fixed;
+    right: 0;
+    top: 70px;
+
+    transform: translateX(120%);
+
+    width: 125px;
+
+    transition: 0.5s;
+
+    &__active {
+      transform: translateX(0);
+    }
+
+    .navigation__link {
+      display: block;
+
+      padding: 10px;
+
+      transition: 0.5s;
+
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+
+      color: $color__white;
+      border-bottom: 1px solid $color__red-value;
+      background-color: $color__violet;
+
+      &:hover {
+        background-color: $color__japonica;
+      }
+    }
+  }
+}
