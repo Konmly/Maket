@@ -1,0 +1,34 @@
+.navigation {
+  display: none;
+
+  @media screen and (max-width: $xs) {
+    display: block;
+
+    &__logo {
+      width: 50px;
+      height: 49px;
+
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    &__list-item_with-border {
+      border-top: 2px solid $color__red-value;
+    }
+
+    &__link {
+      display: block;
+
+      padding: 10px;
+
+      transition: 0.5s;
+
+      color: $color__white;
+      border-bottom: 2px solid $color__red-value;
+
+      &:hover {
+        background-color: $color__japonica;
+      }
+    }
+  }
+}
