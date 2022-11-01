@@ -14,15 +14,25 @@
           <img src="images/Callmar.png" alt="picture of squid" />
         </div>
         <div class="header__btns">
-            <button type="button" class="header__button button">Вход</button>
-            <button type="button" class="header__button-outline button-outline">Регистрация</button>
+          <button type="button" class="header__button button">Вход</button>
+          <button type="button" class="header__button-outline button-outline">Регистрация</button>
         </div>
-        <div class="header__mobile-button">
-          <button class="header__button-hamburger"></button>
-      </div>
+        <div class="header__hamburger-wrap header__hamburger-wrap_active">
+          <button class="header__hamburger-button button-hamburger">
+            <span class="button-hamburger__item"></span>
+          </button>
+        </div>
       </div>
     </header>
     <main>
+      <aside class="sidebar sidebar_active">
+        <nav class="sidebar__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list-item"><a class="navigation__link" href="#">Bход</a></li>
+            <li class="navigation__list-item"><a class="navigation__link" href="#">Регистрация</a></li>
+          </ul>
+        </nav>
+      </aside>
       <section class="octopus">
         <div class="octopus__container container">
           <div class="octopus__img">
@@ -30,8 +40,8 @@
           </div>
           <h1 class="octopus__title">Обратный звонок на сайт</h1>
           <h3 class="octopus__subtitle">
-            Получайте в 3 раза больше звонков сразу после установки виджета на Ваш сайт Сервис
-            окупает свой годовой тариф в первую же неделю
+            <span class="octopus__text">Получайте в 3 раза больше звонков сразу после установки виджета на Ваш сайт</span>
+            <span class="octopus__text">Сервис окупает свой годовой тариф в первую же неделю</span>
           </h3>
           <button type="button" class="octopus__button-outline button-contained">Подключить</button>
         </div>
@@ -39,8 +49,8 @@
       <section class="diver">
         <div class="diver__container container">
           <div class="diver__mobile-text">
-            <span>Как работает виджет</span>
-            <span>обратного звонка</span>
+            <span class="diver__text">Как работает виджет</span>
+            <span class="diver__text">обратного звонка</span>
           </div>
           <dl class="diver__cards">
             <div class="diver__card">
@@ -87,8 +97,8 @@
         <div class="diver__video video">
           <div class="video__container container">
             <h2 class="video__text">
-              <span>Посмотрите видео</span>
-              <span>как работает виджет</span>
+              <span class="video__text-description">Посмотрите видео</span>
+              <span class="video__text-description">как работает виджет</span>
             </h2>
           </div>
           <iframe
@@ -110,8 +120,8 @@
         <div class="footer__tariffs">
           <article class="footer__tariff footer__tariff_left">
             <h2 class="footer__short-title">
-              <span>Бесплатно</span>
-              <span>О руб.</span>
+              <span class="footer__text-free">Бесплатно</span>
+              <span class="footer__text-free">О руб.</span>
             </h2>
             <p class="footer__text">
               Тестовая версия на 14 дней и 20 руб. на балансе для проверки качества связи

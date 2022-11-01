@@ -131,7 +131,7 @@ h3 {
     line-height: $line__height-26;
   }
 
-  @media screen and (max-width: $xl) {
+  @media screen and (max-width: $xs) {
     font-size: $font__size-14;
     line-height: $line__height-20;
   }
@@ -271,4 +271,16 @@ dt,
 p,
 article {
   margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

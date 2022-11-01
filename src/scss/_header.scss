@@ -41,71 +41,77 @@
     }
   }
 
-  &__mobile-button {
-    @media screen and (max-width: $xxl) {
-      display: none;
-    }
-
-    @media screen and (max-width: $xl) {
-      display: none;
-    }
-
-    @media screen and (max-width: $lg) {
-      display: none;
-    }
-
-    @media screen and (max-width: $md) {
-      display: none;
-    }
-
-    @media screen and (max-width: $sm) {
-      display: none;
-    }
-
-    @media screen and (max-width: $xs) {
-      display: block;
-    }
-  }
-
-  &__button-hamburger {
+  &__hamburger-wrap {
     display: none;
 
     @media screen and (max-width: $xs) {
-      position: relative;
       display: block;
+    }
+  }
+
+  &__hamburger-button {
+    display: none;
+
+    @media screen and (max-width: $xs) {
+      @include flex($direction: column, $justify: space-between);
+      position: relative;
+
+      transition: 0.5s;
+
       width: 30px;
       height: 20px;
-      border-top: 4px solid $color__gray-99;
-      border-bottom: 4px solid $color__gray-99;
 
-      &:before {
-        position: absolute;
+      &::before,
+      &::after {
         content: '';
-        top: 4px;
-        left: 0px;
+        height: 4px;
         width: 100%;
-        border-top: 4px solid $color__gray-99;
+
+        transition: 0.5s;
+
+        transform-origin: left;
+
+        background-color: $color__gray-99;
       }
 
-      &:hover {
-        display: none;
+      .header__hamburger-wrap_active {
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::before,
+        &::after {
+          width: 75%;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+
+        .button-hamburger__item {
+          opacity: 0;
+          width: 0;
+        }
       }
     }
   }
 
-  &__button {
-    margin-right: 30px;
+  .button-hamburger__item {
+    display: none;
 
-    @media screen and (max-width: $xl) {
-      margin-right: 26px;
-      font-size: $font__size-16;
-      line-height: $line__height-18;
-    }
+    @media screen and (max-width: $xs) {
+      display: block;
+      height: 4px;
+      width: 30px;
 
-    @media screen and (max-width: $lg) {
-      margin-right: 20px;
-      font-size: $font__size-14;
-      line-height: $line__height-16;
+      transition: 0.5s;
+      transform-origin: right;
+
+      background-color: $color__gray-99;
+
+      &:focus {
+        opacity: 0;
+      }
     }
   }
 }
