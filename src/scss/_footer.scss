@@ -78,8 +78,10 @@
       column-gap: 40px;
     }
 
-    @media screen and (max-width: $xl) {
-      width: 150px;
+    @media screen and (max-width: $sm) {
+      @include flex($direction: column, $align: center);
+
+      row-gap: 37px;
     }
 
     @media screen and (max-width: $xs) {
