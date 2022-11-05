@@ -50,10 +50,10 @@
 
   @media screen and (max-width: $sm) {
     padding-top: 100px;
-    background: url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+    background:
       linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
-    background-position: top 110px right 5px, top 855px left 5px, top 0 left 0;
-    background-size: 310px 260px, 285px 250px, 100%;
+    background-position: top 0 left 0;
+    background-size: 100%;
   }
 
   @media screen and (max-width: $xs) {
