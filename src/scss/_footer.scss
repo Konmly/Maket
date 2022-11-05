@@ -116,6 +116,12 @@
         padding: 25px 40px;
       }
 
+      @media screen and (max-width: $md) {
+        padding: 25px 35px 15px;
+
+        background-size: 233%;
+      }
+
       @media screen and (max-width: $xs) {
         padding: 50px 50px 140px;
       }
@@ -132,6 +138,12 @@
 
       @media screen and (max-width: $xl) {
         padding: 25px 20px 50px;
+      }
+
+      @media screen and (max-width: $md) {
+        padding: 25px 20px 20px;
+
+        background-size: 202%;
       }
 
       @media screen and (max-width: $xs) {
