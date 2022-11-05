@@ -157,6 +157,8 @@
 
     @media screen and (max-width: $md) {
       height: 270px;
+
+      padding: 35px 15px 0 64px;
     }
 
     @media screen and (max-width: $sm) {
@@ -177,6 +179,11 @@
     @media screen and (max-width: $lg) {
       font-size: $font__size-20;
       line-height: $line__height-26;
+    }
+
+    @media screen and (max-width: $md) {
+      font-size: $font__size-18;
+      line-height: $line__height-20;
     }
 
     @media screen and (max-width: $sm) {
