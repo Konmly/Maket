@@ -94,6 +94,12 @@
       column-gap: 15px;
     }
 
+    @media screen and (max-width: $sm) {
+      @include flex($direction: column, $align: center);
+
+      column-gap: 0px;
+    }
+
     @media screen and (max-width: $xs) {
       @include flex($direction: column, $align: center);
 
@@ -118,6 +124,10 @@
     &:nth-child(2) {
       margin-top: 232px;
 
+      @media screen and (max-width: $sm) {
+        margin-top: 30px;
+      }
+
       @media screen and (max-width: $xs) {
         margin-top: 20px;
       }
@@ -126,6 +136,10 @@
     &:nth-child(2n + 4) {
       margin-top: 160px;
 
+      @media screen and (max-width: $sm) {
+        margin-top: 30px;
+      }
+
       @media screen and (max-width: $xs) {
         margin-top: 20px;
       }
@@ -133,6 +147,10 @@
 
     &:nth-child(2n + 3) {
       margin-top: -76px;
+
+      @media screen and (max-width: $sm) {
+        margin-top: 30px;
+      }
 
       @media screen and (max-width: $xs) {
         margin-top: 20px;
@@ -160,7 +178,7 @@
     }
 
     @media screen and (max-width: $sm) {
-      padding: 30px 25px 0 65px;
+      padding: 30px 75px 40px 65px;
     }
 
     @media screen and (max-width: $xs) {
