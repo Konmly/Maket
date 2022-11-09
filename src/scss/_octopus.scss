@@ -155,14 +155,12 @@
       margin-top: 5px;
     }
 
-    @media screen and (max-width: $lg) {
-      width: 700px;
-    }
-
     @media screen and (max-width: $sm) {
-      width: 535px;
-
       margin-top: 10px;
+
+      text-align: center;
+
+      padding: 10px;
     }
 
     @media screen and (max-width: $xs) {
