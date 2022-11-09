@@ -199,6 +199,10 @@ button {
   @media screen and (max-width: $lg) {
     font-size: $font__size-14;
   }
+
+  @media screen and (max-width: $sm) {
+    padding: 3px 20px;
+  }
 }
 
 .button__outlined-md {

@@ -40,6 +40,12 @@
     }
   }
 
+  &__button {
+    @media screen and (max-width: $sm) {
+      font-size: $font__size-16;
+    }
+  }
+
   &__btns {
     @media screen and (max-width: $xs) {
       display: none;
