@@ -29,9 +29,20 @@
       height: 69px;
     }
 
+    @media screen and (max-width: $sm) {
+      width: 60px;
+      height: 62px;
+    }
+
     @media screen and (max-width: $xs) {
       width: 50px;
       height: 49px;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: $sm) {
+      font-size: $font__size-16;
     }
   }
 
