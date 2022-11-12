@@ -335,8 +335,8 @@
   }
 
   &__player {
-    @media screen and (max-width: $sm) {
-      height: 550px;
+    @media screen and (max-width: $md) {
+      height: 500px;
     }
 
     @media screen and (max-width: $xs) {
