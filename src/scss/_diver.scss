@@ -45,15 +45,15 @@
     background: url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
       linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
     background-position: top 110px right 5px, top 995px left 5px, top 0 left 0;
-    background-size: 345px 280px, 370px 290px, 100%;
+    background-size: 315px 250px,330px 260px,100%;
   }
 
   @media screen and (max-width: $sm) {
     padding-top: 100px;
-    background: url('../images/diver.png') 100% no-repeat, url('../images/scuba.png') 100% no-repeat,
+    background:
       linear-gradient(178.68deg, #4f3963 -2.24%, #764469 31.33%, #5e3e66 76.25%, #2c2142 94.12%);
-    background-position: top 110px right 5px, top 855px left 5px, top 0 left 0;
-    background-size: 310px 260px, 285px 250px, 100%;
+    background-position: top 0 left 0;
+    background-size: 100%;
   }
 
   @media screen and (max-width: $xs) {
@@ -94,6 +94,12 @@
       column-gap: 15px;
     }
 
+    @media screen and (max-width: $sm) {
+      @include flex($direction: column, $align: center);
+
+      column-gap: 0px;
+    }
+
     @media screen and (max-width: $xs) {
       @include flex($direction: column, $align: center);
 
@@ -118,6 +124,10 @@
     &:nth-child(2) {
       margin-top: 232px;
 
+      @media screen and (max-width: $sm) {
+        margin-top: 30px;
+      }
+
       @media screen and (max-width: $xs) {
         margin-top: 20px;
       }
@@ -126,6 +136,10 @@
     &:nth-child(2n + 4) {
       margin-top: 160px;
 
+      @media screen and (max-width: $sm) {
+        margin-top: 30px;
+      }
+
       @media screen and (max-width: $xs) {
         margin-top: 20px;
       }
@@ -133,6 +147,10 @@
 
     &:nth-child(2n + 3) {
       margin-top: -76px;
+
+      @media screen and (max-width: $sm) {
+        margin-top: 30px;
+      }
 
       @media screen and (max-width: $xs) {
         margin-top: 20px;
@@ -157,10 +175,12 @@
 
     @media screen and (max-width: $md) {
       height: 270px;
+
+      padding: 35px 15px 0 64px;
     }
 
     @media screen and (max-width: $sm) {
-      padding: 30px 25px 0 65px;
+      padding: 30px 75px 40px 65px;
     }
 
     @media screen and (max-width: $xs) {
@@ -177,6 +197,11 @@
     @media screen and (max-width: $lg) {
       font-size: $font__size-20;
       line-height: $line__height-26;
+    }
+
+    @media screen and (max-width: $md) {
+      font-size: $font__size-18;
+      line-height: $line__height-20;
     }
 
     @media screen and (max-width: $sm) {
@@ -295,8 +320,8 @@
     }
 
     @media screen and (max-width: $sm) {
-      font-size: $font__size-40;
-      line-height: $line__height-60;
+      font-size: $font__size-34;
+      line-height: $line__height-42;
     }
 
     @media screen and (max-width: $xs) {
@@ -310,6 +335,10 @@
   }
 
   &__player {
+    @media screen and (max-width: $md) {
+      height: 500px;
+    }
+
     @media screen and (max-width: $xs) {
       height: 461px;
     }

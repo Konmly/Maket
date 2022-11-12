@@ -101,6 +101,11 @@ h2 {
     line-height: $line__height-40;
   }
 
+  @media screen and (max-width: $md) {
+    font-size: $font__size-28;
+    line-height: $line__height-32;
+  }
+
   @media screen and (max-width: $sm) {
     font-size: $font__size-30;
     line-height: $line__height-34;
@@ -198,6 +203,10 @@ button {
 
   @media screen and (max-width: $lg) {
     font-size: $font__size-14;
+  }
+
+  @media screen and (max-width: $sm) {
+    padding: 3px 20px;
   }
 }
 
